@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?swd83g');
+  src:  url('fonts/icomoon.eot?swd83g#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?swd83g') format('truetype'),
+    url('fonts/icomoon.woff?swd83g') format('woff'),
+    url('fonts/icomoon.svg?swd83g#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?cttoeb');
+  src:  url('fonts/icomoon.eot?cttoeb#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?cttoeb') format('truetype'),
+    url('fonts/icomoon.woff?cttoeb') format('woff'),
+    url('fonts/icomoon.svg?cttoeb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star-empty:before {
+  content: "\e9d7";
+}
+.icon-star-full:before {
+  content: "\e9d9";
+}
+
+.icon-evil:before {
+  content: "\e9ef";
+}
+.icon-evil2:before {
+  content: "\e9f0";
+}
+.icon-reddit:before {
+  content: "\eac6";
+}
+.icon-yelp:before {
+  content: "\ead7";
+}
+
+.icon-brush:before {
+  content: "\e900";
+}
+.icon-device-camera:before {
+  content: "\f056";
+}
+.icon-steps:before {
+  content: "\f0c7";
+}
+.icon-dribbble:before {
+  content: "\e901";
+}
+.icon-gift:before {
+  content: "\e902";
+}
+.icon-film:before {
+  content: "\e913";
+}
+.icon-pacman:before {
+  content: "\e916";
+}
+.icon-book:before {
+  content: "\e91f";
+}
+.icon-heart:before {
+  content: "\e9da";
+}
+.icon-woman:before {
+  content: "\e9dd";
+}
+.icon-hipster:before {
+  content: "\e9f9";
+}
+

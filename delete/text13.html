@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="view-port" content="width=device-width,inital-scale=1">
+  <!-- 显示窗口宽度是客户端的屏幕宽度，显示的文字和图形的初始比例是 1.0-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <!-- 告诉IE浏览器采用最新的渲染模式 -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css"><!-- 字体font-awsome -->
+  <!--[if IE 7]>
+<link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+<![endif]-->
+<!-- <link rel="stylesheet" href="css/ostrich-sans.css"> -->
+<!--   <link rel="stylesheet" href="css/style.css">   字体Icoom -->
+
+<!-- 瀑布流的内容 -->
+<link  rel="stylesheet" href="css/index_waterfall.css">
+
+  <link rel="stylesheet" href="css/myreset.css"> <!-- 初始化样式 -->
+  <link rel="stylesheet" href="css/text13.css">
+
+  <!-- 瀑布流 -->
+
+    <link rel="stylesheet" type="text/css" href="component.css" /> <!-- 瀑布流 -->
+   
+<!--   <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/login.css">  -->
+ <!--  <link rel="stylesheet" href="拖动test.css"> -->
+ 
+ <!--   <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+   <script src="js/jquery-validation-1.14.0/lib/jquery.js"></script>
+   <script src="js/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+   <script src="js/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script> -->
+
+   
+  <!-- 登录注册表单验证插件 -->
+  <!-- <script type="text/javascript" src="js/jquery.fullPage.min.js"></script> -->
+<!--   <script type="text/javascript" src="js/text.js"></script> -->
+ 
+
+  <title>Joy乐享生活</title>
+ 
+</head>
+<body>
+<!-- 导航栏区 -->
+<div class="wrapper">
+  <div class="top">
+    <div class="navbar navbar-default navbar-fixed" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1">
+          <span class="sr-only">
+            Toggle navigation
+          </span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class ="icon-bar"></span>
+          </button>
+
+          <a href ="text13.html" class="navbar-brand icon">
+            <span class="title">乐享生活</span>
+            <i class="fa fa-pagelines fa-5x" aria-hidden="true"></i>
+          </a>
+          <div class="collapse navbar-collapse" id="collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="checked home"><a href="text13.html">首页<span class="line"></span>
+              <span class="fa fa-heart bubble"></span><i class="fa fa-home s-icon"></i>
+              </a></li> 
+              <li class="gym"><a href="sport.html">健身<span class="line"></span>
+              <span class="fa fa-heart bubble"></span><i class="fa fa-google-wallet s-icon"></i>
+              </a></li>
+              <li class="trip"><a href="trip.html">旅游<span class="line"></span>
+              <span class="fa fa-heart bubble"></span><i class="fa fa-plane s-icon"></i></a></li>
+              
+              <li class="makeup"><a href="fashion.html">时尚<span class="line"></span>
+              <span class="fa fa-heart bubble"></span><i class="fa fa-shopping-bag s-icon"></i></a></li>
+              <li class="food"><a href="food.html">美食<span class="line"></span>
+              <span class="fa fa-heart bubble"></span><i class="fa fa-cutlery s-icon"></i></a></li>
+              <li class="read"><a href="read.html">阅读<span class="line"></span>
+              <span class="fa fa-heart bubble"></span><i class="fa fa-book s-icon"></i></a></li>
+            </ul>
+          </div><!--  navbar-collapse -->
+        </div><!-- navbar-header -->
+      </div><!-- container -->
+    </div><!-- navbar-default -->
+  </div><!-- top -->
+</div><!-- wrapper -->
+<!-- 滚动图片区 -->
+<div id="example" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#example" data-slide-to="0" class="active"></li>
+    <li data-target="#example" data-slide-to="1" ></li>
+    <li data-target="#example" data-slide-to="2" ></li>
+    <li data-target="#example" data-slide-to="3" ></li>
+    <li data-target="#example" data-slide-to="4" ></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/running.jpg" alt="">
+      <div class="carousel-caption">
+        <h3>RUNNING WITH DREAM</h3>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img/makeup.jpg" alt="">
+      <div class="carousel-caption">
+          <h3>RUNNING WITH DREAM</h3>
+      </div>      
+    </div>
+    <div class="item">
+      <img src="img/makeup2.jpg" alt="">
+      <div class="carousel-caption">
+          <h3>RUNNING WITH DREAM</h3>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img/make3.jpg" alt="">
+      <div class="carousel-caption">
+          <h3>RUNNING WITH DREAM</h3>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img/make4.jpg" alt="">
+      <div class="carousel-caption">
+          <h3>RUNNING WITH DREAM</h3>
+      </div>
+    </div>
+  </div><!--  carousel-inner -->
+  <a href="#example" class="left carousel-control" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">previous</span>
+  </a>  
+  <a href="#example" class="right carousel-control" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">next</span>
+  </a>
+</div><!-- carousel -->
+<!-- 内容展示区 -->
+
+
+<!-- 瀑布流 -->
+
+      
+    <div class="content">
+    <div class="sub-title clear">
+        <div class="line fl"></div>
+        <div class="tit fl">
+          <h3>今日推荐</h3>
+          <p class="time">2017-4-12</p>
+        </div>
+        <div class="line fl"></div>
+      </div>
+      <div class="row first-row">
+        <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12">
+          <div class="thumbnail pic-big">
+              <img src="img/pic3.jpg" alt="">
+              <div class="masks"></div>
+              <span class="border border-t"></span>
+              <span class="border border-d"></span>
+              <span class="border border-l"></span>
+              <span class="border border-r"></span>              
+             <!--  <div class="clickMe">
+             <p>点我</p><p>了解更多</p>
+             </div> -->
+
+              <div class="caption clear">
+                 
+                  <p class="text">夏日冰激凌 彩色夏天</p>
+                    <div class="sub-left fl">
+                      12个小时前
+                    </div>
+                    <div class="sub-right fr">
+                      <a href="#" class="glyphicon glyphicon-comment">43</a> 
+                      <a href="#" class="glyphicon glyphicon-heart-empty">123</a>
+                      <a href="#" class="glyphicon glyphicon-thumbs-down">18</a>
+                    </div>
+              </div><!-- caption -->
+            </div><!-- thumbnail -->
+        </div>
+        <div class="col-lg-5 col-md-4 col-sm-12 col-xs-12">
+          <div class="thumbnail pic-sm">
+              <img src="img/pic1.jpg" alt="">
+              <div class="masks"></div>
+              <span class="border border-t"></span>
+              <span class="border border-d"></span>
+              <span class="border border-l"></span>
+              <span class="border border-r"></span>              
+              <!-- <div class="clickMe">
+              <p>点我</p><p>了解更多</p>
+              </div> -->
+
+              <div class="caption clear">
+                
+                  <p class="text">全民短发 夏日清凉</p>
+                    <div class="sub-left fl">
+                      12个小时前
+                    </div>
+                    <div class="sub-right fr">
+                      <a href="#" class="glyphicon glyphicon-comment">43</a> 
+                      <a href="#" class="glyphicon glyphicon-heart-empty">123</a>
+                      <a href="#" class="glyphicon glyphicon-thumbs-down">18</a>
+                    </div>
+              </div><!-- caption -->
+            </div><!-- thumbnail -->
+        </div>
+      </div>
+
+
+      <ul class="grid effect-1" id="grid">
+        <li>
+          <div class="content_item">          
+            <div class="content_item_media">
+              <a href=""><img src="images/1.jpg"  alt=""></a>
+            </div>
+            <div class="content_item_head_intro">
+              
+              春林初盛，草长莺飞的日子
+             
+            </div>
+             
+            <div class="content_item_footer">
+              <div class="content_item_footer_info clear">
+                <span class="date">2014-3-30</span>
+                <a href="javascript:;" title="赞" >
+                  <i class="glyphicon glyphicon-heart-empty"></i>199
+                </a>
+                <a href="javascript:;" title="评论">
+                <span class="glyphicon glyphicon-comment"></span>1989
+                </a>
+              </div>
+            </div>
+          </div>
+         </li>
+       <li>
+       <div class="content_item">
+          <div class="content_item_media">
+          <a href=""><img src="images/2.jpg"  alt=""></a>
+        </div>
+        <div class="content_item_head_intro">
+            
+            春林初盛，草长莺飞的日子
+           
+          </div>
+        <div class="content_item_head">
+        </div>
+        <div class="content_item_footer">
+          <div class="content_item_footer_info clear">
+           <span class="date">2014-3-30</span>
+            <a href="javascript:;" title="赞" ><i class="glyphicon glyphicon-heart-empty"></i>199</a>
+            <a href="javascript:;" title="评论"><span class="glyphicon glyphicon-comment"></span>1989</a>
+         
+        </div>
+      </div>
+      </div>
+      </li>
+      <li><div class="content_item">
+          
+          <div class="content_item_media">
+          <a href=""><img src="images/3.jpg"  alt=""></a>
+        </div>
+        <div class="content_item_head_intro">
+            
+            春林初盛，草长莺飞的日子
+           
+          </div>
+        <div class="content_item_head">
+        </div>
+        <div class="content_item_footer">
+          <div class="content_item_footer_info clear">
+           <span class="date">2014-3-30</span>
+            <a href="javascript:;" title="赞" ><i class="glyphicon glyphicon-heart-empty"></i>199</a>
+            <a href="javascript:;" title="评论"><span class="glyphicon glyphicon-comment"></span>1989</a>
+         
+        </div>
+      </div>
+      </div></li>
+      <li><div class="content_item">
+          
+          <div class="content_item_media">
+          <a href=""><img src="images/4.jpg"  alt=""></a>
+        </div>
+        <div class="content_item_head_intro">
+            
+            春林初盛，草长莺飞的日子
+           
+          </div>
+        <div class="content_item_head">
+        </div>
+        <div class="content_item_footer">
+          <div class="content_item_footer_info clear">
+           <span class="date">2014-3-30</span>
+            <a href="javascript:;" title="赞" ><i class="glyphicon glyphicon-heart-empty"></i>199</a>
+            <a href="javascript:;" title="评论"><span class="glyphicon glyphicon-comment"></span>1989</a>
+         
+        </div>
+      </div>
+      </div></li>
+      <li><div class="content_item">
+          
+          <div class="content_item_media">
+          <a href=""><img src="images/5.jpg"  alt=""></a>
+        </div>
+        <div class="content_item_head_intro">
+            
+            春林初盛，草长莺飞的日子
+           
+          </div>
+        <div class="content_item_head">
+        </div>
+        <div class="content_item_footer">
+          <div class="content_item_footer_info clear">
+           <span class="date">2014-3-30</span>
+            <a href="javascript:;" title="赞" ><i class="glyphicon glyphicon-heart-empty"></i>199</a>
+            <a href="javascript:;" title="评论"><span class="glyphicon glyphicon-comment"></span>1989</a>
+         
+        </div>
+      </div>
+      </div></li>
+      <li><div class="content_item">
+          
+          <div class="content_item_media">
+          <a href=""><img src="images/6.jpg"  alt=""></a>
+        </div>
+        <div class="content_item_head_intro">
+            
+            春林初盛，草长莺飞的日子
+           
+          </div>
+        <div class="content_item_head">
+        </div>
+        <div class="content_item_footer">
+          <div class="content_item_footer_info clear">
+           <span class="date">2014-3-30</span>
+            <a href="javascript:;" title="赞" ><i class="glyphicon glyphicon-heart-empty"></i>199</a>
+            <a href="javascript:;" title="评论"><span class="glyphicon glyphicon-comment"></span>1989</a>
+         
+        </div>
+      </div>
+      </div></li>
+      <li><div class="content_item">
+          
+          <div class="content_item_media">
+          <a href=""><img src="images/7.jpg"  alt=""></a>
+        </div>
+        <div class="content_item_head_intro">
+            
+            春林初盛，草长莺飞的日子
+           
+          </div>
+        <div class="content_item_head">
+        </div>
+        <div class="content_item_footer">
+          <div class="content_item_footer_info clear">
+           <span class="date">2014-3-30</span>
+            <a href="javascript:;" title="赞" ><i class="glyphicon glyphicon-heart-empty"></i>199</a>
+            <a href="javascript:;" title="评论"><span class="glyphicon glyphicon-comment"></span>1989</a>
+         
+        </div>
+      </div>
+      </div></li>
+      <li><div class="content_item">
+          
+          <div class="content_item_media">
+          <a href=""><img src="images/8.jpg"  alt=""></a>
+        </div>
+        <div class="content_item_head_intro">
+            
+            春林初盛，草长莺飞的日子
+           
+          </div>
+        <div class="content_item_head">
+        </div>
+        <div class="content_item_footer">
+          <div class="content_item_footer_info clear">
+           <span class="date">2014-3-30</span>
+            <a href="javascript:;" title="赞" ><i class="glyphicon glyphicon-heart-empty"></i>199</a>
+            <a href="javascript:;" title="评论"><span class="glyphicon glyphicon-comment"></span>1989</a>
+         
+        </div>
+      </div>
+      </div></li>
+      <li><div class="content_item">
+          
+          <div class="content_item_media">
+          <a href=""><img src="images/9.jpg"  alt=""></a>
+        </div>
+        <div class="content_item_head_intro">
+            
+            春林初盛，草长莺飞的日子
+           
+          </div>
+        <div class="content_item_head">
+        </div>
+        <div class="content_item_footer">
+          <div class="content_item_footer_info clear">
+           <span class="date">2014-3-30</span>
+            <a href="javascript:;" title="赞" ><i class="glyphicon glyphicon-heart-empty"></i>199</a>
+            <a href="javascript:;" title="评论"><span class="glyphicon glyphicon-comment"></span>1989</a>
+         
+        </div>
+      </div>
+      </div></li><li><div class="content_item">
+          
+          <div class="content_item_media">
+          <a href=""><img src="images/10.png"  alt=""></a>
+        </div>
+        <div class="content_item_head_intro">
+            
+            春林初盛，草长莺飞的日子
+           
+          </div>
+        <div class="content_item_head">
+        </div>
+        <div class="content_item_footer">
+          <div class="content_item_footer_info clear">
+           <span class="date">2014-3-30</span>
+            <a href="javascript:;" title="赞" ><i class="glyphicon glyphicon-heart-empty"></i>199</a>
+            <a href="javascript:;" title="评论"><span class="glyphicon glyphicon-comment"></span>1989</a>
+         
+        </div>
+      </div>
+      </div></li>
+      <li><div class="content_item">
+          
+          <div class="content_item_media">
+          <a href=""><img src="images/11.png"  alt=""></a>
+        </div>
+        <div class="content_item_head_intro">
+            
+            春林初盛，草长莺飞的日子
+           
+          </div>
+        <div class="content_item_head">
+        </div>
+        <div class="content_item_footer">
+          <div class="content_item_footer_info clear">
+           <span class="date">2014-3-30</span>
+            <a href="javascript:;" title="赞" ><i class="glyphicon glyphicon-heart-empty"></i>199</a>
+            <a href="javascript:;" title="评论"><span class="glyphicon glyphicon-comment"></span>1989</a>
+         
+        </div>
+      </div>
+      </div></li>
+      <li><div class="content_item">
+          
+          <div class="content_item_media">
+          <a href=""><img src="images/12.png"  alt=""></a>
+        </div>
+        <div class="content_item_head_intro">
+            
+            春林初盛，草长莺飞的日子
+           
+          </div>
+        <div class="content_item_head">
+        </div>
+        <div class="content_item_footer">
+          <div class="content_item_footer_info clear">
+           <span class="date">2014-3-30</span>
+            <a href="javascript:;" title="赞" ><i class="glyphicon glyphicon-heart-empty"></i>199</a>
+            <a href="javascript:;" title="评论"><span class="glyphicon glyphicon-comment"></span>1989</a>
+         
+        </div>
+      </div>
+      </div></li>
+      <li><div class="content_item">
+          
+          <div class="content_item_media">
+          <a href=""><img src="images/13.png"  alt=""></a>
+        </div>
+        <div class="content_item_head_intro">
+            
+            春林初盛，草长莺飞的日子
+           
+          </div>
+        <div class="content_item_head">
+        </div>
+        <div class="content_item_footer">
+          <div class="content_item_footer_info clear">
+           <span class="date">2014-3-30</span>
+            <a href="javascript:;" title="赞" ><i class="glyphicon glyphicon-heart-empty"></i>199</a>
+            <a href="javascript:;" title="评论"><span class="glyphicon glyphicon-comment"></span>1989</a>
+         
+        </div>
+      </div>
+      </div></li>
+      <li><div class="content_item">
+          
+          <div class="content_item_media">
+          <a href=""><img src="images/14.png"  alt=""></a>
+        </div>
+        <div class="content_item_head_intro">
+            
+            春林初盛，草长莺飞的日子
+           
+          </div>
+        <div class="content_item_head">
+        </div>
+        <div class="content_item_footer">
+          <div class="content_item_footer_info clear">
+           <span class="date">2014-3-30</span>
+            <a href="javascript:;" title="赞" ><i class="glyphicon glyphicon-heart-empty"></i>199</a>
+            <a href="javascript:;" title="评论"><span class="glyphicon glyphicon-comment"></span>1989</a>
+         
+        </div>
+      </div>
+      </div></li>
+      <li><div class="content_item">
+          
+          <div class="content_item_media">
+          <a href=""><img src="images/img_30.jpg"  alt=""></a>
+        </div>
+        <div class="content_item_head_intro">
+            
+            春林初盛，草长莺飞的日子
+           
+          </div>
+        <div class="content_item_head">
+        </div>
+        <div class="content_item_footer">
+          <div class="content_item_footer_info clear">
+           <span class="date">2014-3-30</span>
+            <a href="javascript:;" title="赞" ><i class="glyphicon glyphicon-heart-empty"></i>199</a>
+            <a href="javascript:;" title="评论"><span class="glyphicon glyphicon-comment"></span>1989</a>
+         
+        </div>
+      </div>
+      </div></li>
+      <li><div class="content_item">
+          
+          <div class="content_item_media">
+          <a href=""><img src="images/img_29.jpg"  alt=""></a>
+        </div>
+        <div class="content_item_head_intro">
+            
+            春林初盛，草长莺飞的日子
+           
+          </div>
+        <div class="content_item_head">
+        </div>
+        <div class="content_item_footer">
+          <div class="content_item_footer_info clear">
+           <span class="date">2014-3-30</span>
+            <a href="javascript:;" title="赞" ><i class="glyphicon glyphicon-heart-empty"></i>199</a>
+            <a href="javascript:;" title="评论"><span class="glyphicon glyphicon-comment"></span>1989</a>
+         
+        </div>
+      </div>
+      </div></li>
+      <li><div class="content_item">
+          
+          <div class="content_item_media">
+          <a href=""><img src="images/img_28.jpg"  alt=""></a>
+        </div>
+        <div class="content_item_head_intro">
+            
+            春林初盛，草长莺飞的日子
+           
+          </div>
+        <div class="content_item_head">
+        </div>
+        <div class="content_item_footer">
+          <div class="content_item_footer_info clear">
+           <span class="date">2014-3-30</span>
+            <a href="javascript:;" title="赞" ><i class="glyphicon glyphicon-heart-empty"></i>199</a>
+            <a href="javascript:;" title="评论"><span class="glyphicon glyphicon-comment"></span>1989</a>
+         
+        </div>
+      </div>
+      </div></li>
+      <li><div class="content_item">
+          
+          <div class="content_item_media">
+          <a href=""><img src="images/img_27.jpg"  alt=""></a>
+        </div>
+        <div class="content_item_head_intro">
+            
+            春林初盛，草长莺飞的日子
+           
+          </div>
+        <div class="content_item_head">
+        </div>
+        <div class="content_item_footer">
+          <div class="content_item_footer_info clear">
+           <span class="date">2014-3-30</span>
+            <a href="javascript:;" title="赞" ><i class="glyphicon glyphicon-heart-empty"></i>199</a>
+            <a href="javascript:;" title="评论"><span class="glyphicon glyphicon-comment"></span>1989</a>
+         
+        </div>
+      </div>
+      </div></li>
+      <li><div class="content_item">
+          
+          <div class="content_item_media">
+          <a href=""><img src="images/img_26.jpg"  alt=""></a>
+        </div>
+        <div class="content_item_head_intro">
+            
+            春林初盛，草长莺飞的日子
+           
+          </div>
+        <div class="content_item_head">
+        </div>
+        <div class="content_item_footer">
+          <div class="content_item_footer_info clear">
+           <span class="date">2014-3-30</span>
+            <a href="javascript:;" title="赞" ><i class="glyphicon glyphicon-heart-empty"></i>199</a>
+            <a href="javascript:;" title="评论"><span class="glyphicon glyphicon-comment"></span>1989</a>
+         
+        </div>
+      </div>
+      </div>
+      </li>
+      </ul>
+          <!-- <li><a href="#"><img src="images/img_1.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_2.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_3.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_4.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_5.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_6.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_7.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_8.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_9.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_10.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_11.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_12.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_13.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_14.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_15.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_16.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_17.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_18.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_19.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_20.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_21.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_22.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_23.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_24.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_25.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_26.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_27.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_28.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_29.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+          <li><a href="#"><img src="images/img_30.jpg" alt="dummy"><h3>A fantastic title</h3></a></li> -->
+        
+        </ul>
+     
+    
+
+      <!-- 第一行 -->
+      <!-- <div class="row">
+      <div class="col-sm-6 col-lg-3 col-md-4 col-xs-12">
+             <div class="thumbnail">
+              <img src="img/pic2.jpg" alt="">
+              <div class="masks"></div>
+              <span class="border border-t"></span>
+              <span class="border border-d"></span>
+              <span class="border border-l"></span>
+              <span class="border border-r"></span>              
+              <div class="clickMe">
+              <p>点我</p><p>了解更多</p>
+              </div>
+      
+              <div class="caption clear">
+                  <h3>哈哈哈哈</h3>
+                  <p class="text">大胆而谨慎、运动但优雅，这个 28 岁设计师的作品有点意思</p>
+                    <div class="sub-left fl">
+                      12个小时前
+                    </div>
+                    <div class="sub-right fr">
+                      <a href="#" class="glyphicon glyphicon-comment">43</a> 
+                      <a href="#" class="glyphicon glyphicon-heart-empty">123</a>
+                      <a href="#" class="glyphicon glyphicon-thumbs-down">18</a>
+                    </div>
+              </div>caption
+            </div>thumbnail
+         </div>col
+        <div class="col-sm-6 col-lg-3 col-md-4 col-xs-12">
+             <div class="thumbnail">
+              <img src="img/pic13.jpg" alt="">
+              <div class="masks"></div>
+              <span class="border border-t"></span>
+              <span class="border border-d"></span>
+              <span class="border border-l"></span>
+              <span class="border border-r"></span>              
+              <div class="clickMe">
+              <p>点我</p><p>了解更多</p>
+              </div>
+      
+              <div class="caption clear">
+                  <h3>哈哈哈哈</h3>
+                  <p class="text">大胆而谨慎、运动但优雅，这个 28 岁设计师的作品有点意思</p>
+                    <div class="sub-left fl">
+                      12个小时前
+                    </div>
+                    <div class="sub-right fr">
+                      <a href="#" class="glyphicon glyphicon-comment">43</a> 
+                      <a href="#" class="glyphicon glyphicon-heart-empty">123</a>
+                      <a href="#" class="glyphicon glyphicon-thumbs-down">18</a>
+                    </div>
+              </div>caption
+            </div>thumbnail
+         </div>col
+         <div class="col-sm-6 col-lg-3 col-md-4 col-xs-12">
+             <div class="thumbnail">
+              <img src="img/pic4.jpg" alt="">
+              <div class="masks"></div>
+              <span class="border border-t"></span>
+              <span class="border border-d"></span>
+              <span class="border border-l"></span>
+              <span class="border border-r"></span>              
+              <div class="clickMe">
+              <p>点我</p><p>了解更多</p>
+              </div>
+            
+      
+              <div class="caption clear">
+                  <h3>Thumbnail label</h3>
+                  <p class="text">大胆而谨慎、运动但优雅，这个 28 岁设计师的作品有点意思</p>
+                    <div class="sub-left fl">
+                      12个小时前
+                    </div>
+                    <div class="sub-right fr">
+                      <a href="#" class="glyphicon glyphicon-comment">43</a> 
+                      <a href="#" class="glyphicon glyphicon-heart-empty">123</a>
+                      <a href="#" class="glyphicon glyphicon-thumbs-down">18</a>
+                    </div>
+              </div>caption
+            </div>thumbnail
+         </div>col
+         <div class="col-sm-6 col-lg-3 col-md-4 col-xs-12 ">
+             <div class="thumbnail">
+              <img src="img/pic5.jpg" alt="">
+              <div class="masks"></div>
+              <span class="border border-t"></span>
+              <span class="border border-d"></span>
+              <span class="border border-l"></span>
+              <span class="border border-r"></span>              
+              <div class="clickMe">
+              <p>点我</p><p>了解更多</p>
+              </div>
+              <div class="caption clear">
+                  <h3>Thumbnail label</h3>
+                  <p class="text">大胆而谨慎、运动但优雅，这个 28 岁设计师的作品有点意思</p>
+                  <div class="sub-left fl">
+                      12个小时前
+                    </div>
+                    <div class="sub-right fr">
+                      <a href="#" class="glyphicon glyphicon-comment">43</a> 
+                      <a href="#" class="glyphicon glyphicon-heart-empty">123</a>
+                      <a href="#" class="glyphicon glyphicon-thumbs-down">18</a>
+                    </div>
+              </div>caption
+            </div>thumbnail
+         </div>col
+        
+      </div>row
+      
+      第二行
+      <div class="row">
+        <div class="col-sm-6 col-lg-3 col-md-4 col-xs-12">
+             <div class="thumbnail">
+              <img src="img/pic6.jpg" alt="">
+              <div class="masks"></div>
+              <span class="border border-t"></span>
+              <span class="border border-d"></span>
+              <span class="border border-l"></span>
+              <span class="border border-r"></span>              
+              <div class="clickMe">
+              <p>点我</p><p>了解更多</p>
+              </div>
+              <div class="caption clear">
+                  <h3>哈哈哈哈</h3>
+                  <p class="text">大胆而谨慎、运动但优雅，这个 28 岁设计师的作品有点意思</p>
+                    <div class="sub-left fl">
+                      12个小时前
+                    </div>
+                    <div class="sub-right fr">
+                      <a href="#" class="glyphicon glyphicon-comment">43</a> 
+                      <a href="#" class="glyphicon glyphicon-heart-empty">123</a>
+                      <a href="#" class="glyphicon glyphicon-thumbs-down">18</a>
+                    </div>
+              </div>caption
+            </div>thumbnail
+         </div>col
+         <div class="col-sm-6 col-lg-3 col-md-4 col-xs-12">
+             <div class="thumbnail">
+              <img src="img/big18.jpg" alt="">
+              <div class="masks"></div>
+              <span class="border border-t"></span>
+              <span class="border border-d"></span>
+              <span class="border border-l"></span>
+              <span class="border border-r"></span>              
+              <div class="clickMe">
+              <p>点我</p><p>了解更多</p>
+              </div>
+              <div class="caption clear">
+                  <h3>Thumbnail label</h3>
+                  <p class="text">大胆而谨慎、运动但优雅，这个 28 岁设计师的作品有点意思</p>
+                    <div class="sub-left fl">
+                      12小时前
+                    </div>
+                    <div class="sub-right fr">
+                      <a href="#" class="glyphicon glyphicon-comment">43</a> 
+                      <a href="#" class="glyphicon glyphicon-heart-empty">123</a>
+                      <a href="#" class="glyphicon glyphicon-thumbs-down">18</a>
+                    </div>
+              </div>caption
+            </div>thumbnail
+         </div>col
+         <div class="col-sm-6 col-lg-3 col-md-4 col-xs-12">
+             <div class="thumbnail">
+              <img src="img/pic7.jpg" alt="">
+              <div class="masks"></div>
+              <span class="border border-t"></span>
+              <span class="border border-d"></span>
+              <span class="border border-l"></span>
+              <span class="border border-r"></span>              
+              <div class="clickMe">
+              <p>点我</p><p>了解更多</p>
+              </div>
+              <div class="caption clear">
+                  <h3>Thumbnail label</h3>
+                  <p class="text">大胆而谨慎、运动但优雅，这个 28 岁设计师的作品有点意思</p>
+                  <div class="sub-left fl">
+                      12个小时前
+                    </div>
+                    <div class="sub-right fr">
+                      <a href="#" class="glyphicon glyphicon-comment">43</a> 
+                      <a href="#" class="glyphicon glyphicon-heart-empty">123</a>
+                      <a href="#" class="glyphicon glyphicon-thumbs-down">18</a>
+                    </div>
+              </div>caption
+            </div>thumbnail
+         </div>col
+         <div class="col-sm-6 col-lg-3 col-md-4 col-xs-12">
+             <div class="thumbnail">
+              <img src="img/pic8.jpg" alt="">
+              <div class="masks"></div>
+              <span class="border border-t"></span>
+              <span class="border border-d"></span>
+              <span class="border border-l"></span>
+              <span class="border border-r"></span>              
+              <div class="clickMe">
+              <p>点我</p><p>了解更多</p>
+              </div>
+              <div class="caption clear">
+                  <h3>Thumbnail label</h3>
+                  <p class="text">大胆而谨慎、运动但优雅，这个 28 岁设计师的作品有点意思</p>
+                    <div class="sub-left fl">
+                      12个小时前
+                    </div>
+                    <div class="sub-right fr">
+                      <a href="#" class="glyphicon glyphicon-comment">43</a> 
+                      <a href="#" class="glyphicon glyphicon-heart-empty">123</a>
+                      <a href="#" class="glyphicon glyphicon-thumbs-down">18</a>
+                    </div>
+              </div>caption
+            </div>thumbnail
+         </div>col
+      </div>row
+      
+      第三行
+      <div class="row">
+        <div class="col-sm-6 col-lg-3 col-md-4 col-xs-12">
+             <div class="thumbnail">
+              <img src="img/pic9.jpg" alt="">
+              <div class="masks"></div>
+              <span class="border border-t"></span>
+              <span class="border border-d"></span>
+              <span class="border border-l"></span>
+              <span class="border border-r"></span>              
+              <div class="clickMe">
+              <p>点我</p><p>了解更多</p>
+              </div>
+              <div class="caption clear">
+                  <h3>哈哈哈哈</h3>
+                  <p class="text">大胆而谨慎、运动但优雅，这个 28 岁设计师的作品有点意思</p>
+                    <div class="sub-left fl">
+                      12个小时前
+                    </div>
+                    <div class="sub-right fr">
+                      <a href="#" class="glyphicon glyphicon-comment">43</a> 
+                      <a href="#" class="glyphicon glyphicon-heart-empty">123</a>
+                      <a href="#" class="glyphicon glyphicon-thumbs-down">18</a>
+                    </div>
+              </div>caption
+            </div>thumbnail
+         </div>col
+         <div class="col-sm-6 col-lg-3 col-md-4 col-xs-12">
+             <div class="thumbnail">
+              <img src="img/pic10.jpg" alt="">
+              <div class="masks"></div>
+              <span class="border border-t"></span>
+              <span class="border border-d"></span>
+              <span class="border border-l"></span>
+              <span class="border border-r"></span>              
+              <div class="clickMe">
+              <p>点我</p><p>了解更多</p>
+              </div>
+              <div class="caption clear">
+                  <h3>Thumbnail label</h3>
+                  <p class="text">大胆而谨慎、运动但优雅，这个 28 岁设计师的作品有点意思</p>
+                    <div class="sub-left fl">
+                      12小时前
+                    </div>
+                    <div class="sub-right fr">
+                      <a href="#" class="glyphicon glyphicon-comment">43</a> 
+                      <a href="#" class="glyphicon glyphicon-heart-empty">123</a>
+                      <a href="#" class="glyphicon glyphicon-thumbs-down">18</a>
+                    </div>
+              </div>caption
+            </div>thumbnail
+         </div>col
+         <div class="col-sm-6 col-lg-3 col-md-4 col-xs-12">
+             <div class="thumbnail">
+              <img src="img/pic11.jpg" alt="">
+              <div class="masks"></div>
+              <span class="border border-t"></span>
+              <span class="border border-d"></span>
+              <span class="border border-l"></span>
+              <span class="border border-r"></span>              
+              <div class="clickMe">
+              <p>点我</p><p>了解更多</p>
+              </div>
+              <div class="caption clear">
+                  <h3>Thumbnail label</h3>
+                  <p class="text">大胆而谨慎、运动但优雅，这个 28 岁设计师的作品有点意思</p>
+                  <div class="sub-left fl">
+                      12个小时前
+                    </div>
+                    <div class="sub-right fr">
+                      <a href="#" class="glyphicon glyphicon-comment">43</a> 
+                      <a href="#" class="glyphicon glyphicon-heart-empty">123</a>
+                      <a href="#" class="glyphicon glyphicon-thumbs-down">18</a>
+                    </div>
+              </div>caption
+            </div>thumbnail
+         </div>col
+         <div class="col-sm-6 col-lg-3 col-md-4 col-xs-12">
+             <div class="thumbnail">
+              <img src="img/pic12.jpg" alt="">
+              <div class="masks"></div>
+              <span class="border border-t"></span>
+              <span class="border border-d"></span>
+              <span class="border border-l"></span>
+              <span class="border border-r"></span>              
+              <div class="clickMe">
+              <p>点我</p><p>了解更多</p>
+              </div>
+              <div class="caption clear">
+                  <h3>Thumbnail label</h3>
+                  <p class="text">大胆而谨慎、运动但优雅，这个 28 岁设计师的作品有点意思</p>
+                    <div class="sub-left fl">
+                      12个小时前
+                    </div>
+                    <div class="sub-right fr">
+                      <a href="#" class="glyphicon glyphicon-comment">43</a> 
+                      <a href="#" class="glyphicon glyphicon-heart-empty">123</a>
+                      <a href="#" class="glyphicon glyphicon-thumbs-down">18</a>
+                    </div>
+              </div>caption
+            </div>thumbnail
+         </div>col
+      </div>row -->
+      <button class="btn btn-default">加载更多</button>
+    </div><!-- content -->
+
+  <!-- 底部 -->
+<div class="footer">
+  <div class="box">
+    <div class="link link-miss">
+      <a href=""><span class="icon"><i class="fa fa-weibo fa-5x" aria-hidden="true"></i>
+      <a href="" class="button">
+      <span class="line line-top"></span>
+      <span class="line line-right"></span>
+      <span class="line line-bottom"></span>
+      <span class="line line-left"></span>
+      <div class="tip weibo"><em></em>
+      <span></span>分享到微博</div>
+      微博</a>
+    </div>
+    <div class="link link-play">
+      <a href=""><span class="icon"><i class="fa fa-qq fa-5x" aria-hidden="true"></i>
+      <a href="" class="button">
+      <span class="line line-top"></span>
+      <span class="line line-right"></span>
+      <span class="line line-bottom"></span>
+      <span class="line line-left"></span>
+      <div class="tip qq"><em></em>
+      <span></span>分享到QQ空间</div>
+      QQ</a>
+    </div>
+    <div class="link link-touch">
+      <a href=""><span class="icon"><i class="fa fa-weixin fa-5x" aria-hidden="true"></i>
+      </span></a>
+      <a href="" class="button">
+      <span class="line line-top"></span>
+      <span class="line line-right"></span>
+      <span class="line line-bottom"></span>
+      <span class="line line-left"></span>
+      <div class="tip weixin"><em></em>
+      <span></span>分享到微信</div>
+      微信</a>
+    </div>
+
+    <!-- 划过button时，上面出现提示信息 这个div不能放在每一个link里 因为提示信息是自适应的，并且内容可能超过Link的宽度，所以要相对于box定位 -->
+      
+    
+  </div><!-- box --><div class="footer-mask"></div> 
+  </div><!-- footer --> 
+  <div class="mes">
+    <p><a href="">关于我们</a><span>|</span><a href="">联系我们</a><span>|</span><a href="">版权声明</a></p>
+    <p >2017 乐享生活 版权所有 Copyright&copy;2017</p>
+  </div>
+  
+  <!-- 侧边栏 -->
+ <div id="sidebar">
+  <div class="top">
+    <div id="register" class="item" >
+      <a href="javascript:showDialog();">
+                <i class="fa fa-user-plus" aria-hidden="true"></i>
+            <div>登录/<br>注册</div>
+          </a>
+        </div>
+        <!-- <div id="login" class="item">
+            <a href="javascript:showDialog();">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+              <div>登录</div>
+            </a>
+        </div> -->
+        <div id="user" class="item">
+            <a href="me_show.html">
+                <i class="glyphicon glyphicon-user"></i>
+              <div>我</div>
+           </a>
+        </div>
+        <div id="colloction" class="item">
+            <a href="collect2.html">
+                <i class="glyphicon glyphicon-star"></i>
+              <div>收藏</div>
+            </a>
+        </div>
+
+        <div id="foot" class="item">
+            <a href="saw.html">
+                <i class="glyphicon glyphicon-eye-open"></i>
+              <div>看过</div>
+            </a>
+        </div>
+  </div><!-- top -->
+</div> <!-- sidebar -->
+<!-- 关闭侧边栏 -->
+<div id="closeBar">
+  <span>
+        <i class="glyphicon glyphicon-remove"></i>
+    </span>
+</div>
+
+
+<!-- 返回顶部 -->
+<div class="toolbar">
+    <a href="javascript:;" class="toolbar-item">
+      <span class="toolbar-btn">
+        <i class="toolbar-icon fa fa-weixin"></i>
+        <span class="toolbar-text">公众<br>账号</span>
+      </span>
+      <span class="toolbar-layer toolbar-layer-weixin"></span>
+    </a>
+    <a href="javascript:;" class="toolbar-item">
+      <span class="toolbar-btn">
+        <i class="toolbar-icon fa fa-commenting"></i>
+        <span class="toolbar-text">意见<br>反馈</span>
+      </span>
+      
+    </a>
+    <a href="javascript:;" class="toolbar-item">
+      <span class="toolbar-btn">
+        <i class=" toolbar-icon fa fa-cloud-download"></i>
+        <span class="toolbar-text">APP<br>下载</span>
+      </span>
+      <span class="toolbar-layer toolbar-layer-app"></span>
+    </a>
+    <a id="backtop" href="javascript:;" class="toolbar-item">
+      <span class="toolbar-btn">
+        <i class="toolbar-icon glyphicon glyphicon-chevron-up"></i>
+        <span class="toolbar-text">返回<br>顶部</span>
+      </span>
+      
+    </a>
+  </div> 
+
+<!--  <div class="ui-mask" id="masks" ></div>
+<div class="login_cont" id="dialogMove">
+   <div class="login_nav" id="dialogDrag">
+     <div class='nav_slider'><a href='#' class='signup focus'>注册</a><a href='#' class='signin'>登录</a></div>
+   </div>
+   <form>
+     <div class="input_signup active">
+       <input class="input" id="user_name" type="text" aria-label="用户名（包含字母／数字／下划线" placeholder="用户名">
+       <div class="hint">请填写符合格式的用户名</div>
+       <input class="input" id="user_email" type="text" aria-label="邮箱" placeholder="邮箱">
+       <div class="hint">请填写邮箱</div>
+       <input class="input" id="phone" type="text" class="account" aria-label="手机号（仅支持中国大陆）" placeholder="手机号（仅支持中国大陆）">
+       <div class="hint">请填写手机号</div>
+       <input class="input" id="password" type="password" aria-label="密码" placeholder="密码（不少于 6 位）">
+       <div class="hint">请填写符合格式的密码</div>
+       <input class="input" id="repassword" type="password" aria-label="密码" placeholder="再次输入密码">
+       <div class="hint">请再次输入密码</div>
+       <input type="submit" id="submit" class="button" name="button" value="注册">
+     </div>
+   </form>
+   <form>
+     <div class="input_signin">
+       <input class="input" id="login_user_name" type="text" aria-label="用户名" placeholder="用户名">
+       <div class="hint">请输入用户名</div>
+       <input class="input" id="login_password" type="password" aria-label="密码" placeholder="密码">
+       <div class="hint">请输入密码</div>
+       <input type="submit" id="button" class="button" name="button" value="登录">
+       <div class="forget">
+         <a href="forget.html">忘记密码？</a>
+       </div>
+     </div>
+   </form>
+ </div>
+}
+-->
+<!-- 注册 -->
+<div class="ui-mask" id="masks" ></div>
+<div class="ui-dialog  login_cont" id="dialogMove">
+  <div class="titBox" id="dialogDrag">
+    <div class="ui-dialog-title"   onselectstart="return false">
+      <div class="nav_slider">
+       <a href="#" class="nav_slider_item signup focus">注册</a>
+       <a href="#"  class="nav_slider_item signin">登录</a>
+      </div>
+      <a class="ui-dialog-closebutton" href="javascript:hideDialog();"></a>
+    </div>
+  </div>
+    
+  <div class='contentBox '>
+    <form  id="registerForm" method="get" action="">
+      <div class="input_signup active">
+        <div class='col clear'>
+          <div class='txt'>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱:</div>
+          <input name="email" type='email' class='box' placeholder='请输入邮箱'>
+        </div>
+        <div class='col clear'>
+          <div class='txt'>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:</div>
+          <input name="psw" id="psw" type='password' class='box' placeholder='请输入密码'  >
+        </div>
+        <div class='col clear'>
+          <div class='txt'>确认密码:</div>
+          <input name="rpsw" type='password' class='box' placeholder='请再次输入密码'  >
+        </div>
+        <input type="submit" value="立即注册" class="login-btn" >
+      </div>
+    </form>
+  <form  id='loginForm' method='post' action=''><div class='contentBox input_signin'><div class='col clear'><div class='txt'>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱:</div><input type='text'  name='loginID' id='loginID' class='box' placeholder='请输入账号' required></div><div class='col clear'><div class='txt' >密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:</div><input type='password' name='loginPSW' id='loginPSW' class='box' placeholder='请输入密码' required></div><input type='submit' class='login-btn' value='登录'/></form><div class='other'><a href='#' class='forget' id="forget_psw">忘记密码</a>
+  </form>
+ 
+</div>
+
+ <!--  
+<div class="ui-mask" id="masks" ></div>
+
+
+<div class="ui-dialog  login_cont" id="dialogMove2">
+
+<div class="titBox" id="dialogDrag2">
+  <div class="ui-dialog-title"   onselectstart="return false">
+    
+   <div class="nav_slider">
+     <a href="#" class="nav_slider_item signup">注册</a>
+     <a href="#"  class="nav_slider_item signin focus">登录</a>
+   </div>
+
+    <a class="ui-dialog-closebutton" href="javascript:hideDialog();"></a>
+
+  </div>
+</div>
+
+ <div class='contentBox '>
+ <form  id="registerForm" method="get" action="">
+ <div class="input_signup">
+ <div class='col clear'>
+ <div class='txt'>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱:</div>
+ <input name="email" type='email' class='box' placeholder='请输入邮箱'>
+ </div>
+ <div class='col clear'>
+ <div class='txt'>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:</div>
+ <input name="psw" id="psw" type='password' class='box' placeholder='请输入密码'  >
+ </div>
+ <div class='col clear'>
+ <div class='txt'>确认密码:</div>
+ <input name="rpsw" type='password' class='box' placeholder='请再次输入密码'  >
+ </div>
+ 
+ 
+ <input type="submit" value="立即注册" class="login-btn" >
+ </div></form>
+ <form  id='loginForm' method='post' action=''><div class='contentBox input_signin  active'><div class='col clear'><div class='txt'>账号:</div><input type='text'  name='loginID' id='loginID' class='box' placeholder='请输入账号' required></div><div class='col clear'><div class='txt' >密码:</div><input type='password' name='loginPSW' id='loginPSW' class='box' placeholder='请输入密码' required></div><input type='submit' class='login-btn' value='登录'/></form><div class='other'><a href='#' class='forget'>忘记密码</a></form></div></div>";
+ </div>
+ </div>
+ 
+ 
+  -->
+   <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script src="modernizr.custom.js"></script><!-- 瀑布流 -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/messages_zh.js"></script>
+ <script type="text/javascript" src="js/test.js"></script>
+ <script type="text/javascript" src="js/拖动test.js"></script>
+<!--  <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/colorfinder-1.1.js"></script>
+    <script src="js/gridScrollFx.js"></script>
+    <script>
+      new GridScrollFx( document.getElementById( 'grid' ), {
+        viewportFactor : 0.4
+      } );
+    </script> -->
+    <script src="masonry.pkgd.min.js"></script>
+    <script src="imagesloaded.js"></script>
+    <script src="classie.js"></script>
+    <script src="AnimOnScroll.js"></script>
+    <script>
+      new AnimOnScroll( document.getElementById( 'grid' ), {
+        minDuration : 0.4,
+        maxDuration : 0.7,
+        viewportFactor : 0.2
+      } );
+    </script>
+    <script type="text/javascript" src="js/login.js"></script>
+   <!--   <script type="text/javascript" src="js/form.js"></script>
+     <script type="text/javascript" src="js/config.js"></script>
+     <script type="text/javascript" src="js/login_ajax.js"></script> -->
+</body>
+</html>

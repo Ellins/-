@@ -1,0 +1,229 @@
+@import url('font-awesome.css');
+
+.timelist{
+ 	background:rgba(0,0,0,0.97);
+  /* width: 80%; */
+  width: 1200px;
+  margin: 0px auto;
+  margin-bottom: 50px;	
+  color:#ccc;
+  text-align: center;
+
+  background-image: -webkit-radial-gradient(top, circle cover, #000 0%, #000 80%);
+  background-image: -moz-radial-gradient(top, circle cover, #000 0%, #000 80%);
+  background-image: -o-radial-gradient(top, circle cover, #000 0%, #000 80%);
+  background-image: -ms-radial-gradient(top, circle cover, #000 0%, #000 80%);
+  background-image: radial-gradient(circle cover at top, #000 0%, #000 80%);
+    .topper{
+    	height: 400px;
+	   	/* width: 100%;  */ 
+      width: 1200px;
+	   	background: url(../images/saw7.jpg)  repeat-x;
+	    background-position: center -100px;
+	   }
+	    .head_img{
+	      width: 300px;
+        /* width:30%; */
+
+	    	height: 200px;
+	    	border-radius: 50%;
+	    	overflow: hidden;
+	    	margin: 50px auto;
+	    	margin-bottom: 0; 
+        position: relative;
+		    	img{
+					width: 200px;
+	    	height: 200px;
+	    	border-radius: 50%;
+	    	overflow: hidden;
+       
+		    
+	    	}
+          .img-cover{
+           position: absolute;
+           left: 50%;
+           margin-left: -100px;
+           top: 0;
+           border-radius:50%; 
+           background: rgba(0,0,0,0.01);
+            /* display: none;  */
+           width: 200px;
+           height: 200px;
+           line-height: 300px;
+           text-align: center;
+           cursor: pointer;
+           a{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            color: rgba(0,0,0,0.01);
+           }
+           &:hover{
+            background: rgba(0,0,0,0.5);
+            a{
+              color:#fff;
+            }
+  
+           }
+
+	    }
+      
+         
+         
+        }
+      .text{
+    /*     position:relative;
+        top: -200px; */
+        padding-bottom:50px;
+
+      }  
+  
+.login-btn a{
+  display: inline-block;
+  width: 100%;
+  color:#fff;
+}
+
+
+}
+  /*   .sexBox{
+    	background: none;
+	    height: 30px;
+	    width: 160px;
+	    line-height: 30px;
+	    float: left;
+	    border: none;
+	    margin-left: 20px;
+	    color: #fff;
+	    padding-left: 10px; 
+	    } */
+//性别
+  .radioGroup {
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.radioGroup label {
+  position: relative;
+  left: -34px;
+  padding-left: 1.5em;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+.radioGroup label:hover {
+  color: #FFF;
+}
+.radioGroup label::before, .radioGroup label::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+.radioGroup label::before {
+  box-shadow: 0 0px 0 rgba(255, 255, 255, 0.25), 0 2px 5px 6px rgba(0, 0, 0, 0.5) inset;
+}
+.radioGroup label::after {
+  background: #79EAC5;
+  opacity: .2;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.radioGroup label:hover::after {
+  -webkit-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.radioGroup input {
+  position: absolute;
+  left: -24px;
+  z-index: -1;
+  opacity: 0;
+}
+.radioGroup input:checked + label::after {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 1;
+  box-shadow: 0 0 15px -1px #79EAC5;
+}
+
+  .timelist{
+   
+    background:rgba(0,0,0,0.97);
+   /* 
+   width: 80%; */
+    width: 1200px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+  }
+  .topper{
+   height: 400px;
+   /* width: 100%;   */
+   width: 1200px;
+   background: url(images/saw7.jpg)  repeat-x;
+    background-position: center -100px;
+ }
+.me_txt{
+  color: #fff;
+
+}
+ .contentBox .me_box{
+  color: #fff;
+  border-bottom: 1px solid #fff;
+} 
+.me-login-btn{
+  border: 1px solid #fff;
+    color:#fff;
+}
+
+  .timelist{
+   
+    background:rgba(0,0,0,0.97);
+   /* 
+   width: 80%; */
+    width: 1200px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+  }
+  .topper{
+   height: 400px;
+   /* width: 100%;   */
+   width: 1200px;
+   background: url(images/saw7.jpg)  repeat-x;
+    background-position: center -100px;
+ }
+   .me_txt{
+  color: #fff;
+
+}
+ .contentBox .me_box{
+  color: #fff;
+  border-bottom: 1px solid #fff;
+} 
+.me-login-btn{
+  border: 1px solid #fff;
+  color:#fff;
+}
+.radioGroup label{
+  margin-top: 10px;
+}

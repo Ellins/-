@@ -1,0 +1,213 @@
+body{
+          font-family: "微软雅黑";
+          background: #fff;
+        }
+        
+        .editor-box{
+          width: 1000px;
+          margin: 0px auto;
+          background: #fff;
+          padding: 20px 50px;
+        }
+        .editor-main{
+            width: 800px;
+            margin: 50px auto;
+            margin-top:10px;
+        }
+        #editor-trigger {
+            height: 400px;
+            /*max-height: 500px;*/
+        }
+        .editor-container {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+        .editor-title-box{
+          padding-top: 50px;
+          width: 800px;
+          margin: 0 auto;
+        }
+        .editor-title{
+          width: 800px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          font-size: 26px;
+          padding: 30px 0;
+          font-family:"Comic Sans MS", "Impact","微软雅黑";
+         
+
+        }
+        .editor-btn-box{
+          width: 800px;
+          margin: 15px auto;
+        }
+        .editor-btn{
+          float: right;
+          padding-top: 10px;
+         padding-right: 10px;
+        }
+         .editor-btn a{
+          display: inline-block;
+        } 
+         .editor-write-btn:hover, .editor-back-btn:hover.editor-cancle-btn:hover,.editor-publish-btn:hover{
+            background: #e05b5b;
+            color: #fff;
+          }
+        .editor-cancle-btn,.editor-publish-btn,.editor-write-btn{
+          width: 100px;
+          background: #f19191;
+          color: #fff;
+          padding:10px 20px;
+        
+        }
+        .editor-write-btn{
+          float: right;
+          margin-right: 20px;
+          text-align: center;
+          padding: 5px 10px;
+        }
+
+         /* .editor-write-btn{
+         position: absolute;
+         top: 120px;
+         right: 200px;
+         
+                }  */
+        .editor-publish-btn{
+          margin-right: 30px;
+        }
+        .editor-back{
+          float: left;
+          padding-top: 10px;
+          padding-left: 10px;
+          text-align: center;
+
+        }
+        .editor-back-btn{
+          background: none;
+          border: 1px solid #f19191;
+          width: 100px;
+          padding:10px 20px;
+        }
+        .editor-back-btn:hover{
+          background: #e05b5b;
+            color: #fff;
+        }
+         .editor-back a{
+          display: block;
+          color: #f19191;
+         }
+          .ui-dialog{
+            background: #fff;
+            opacity: 1;
+        
+          }
+          .titBox{
+            color: #000;
+          }
+          .txt{
+            color: #000;
+          }
+          .ui-dialog-title{
+            height: 70px;
+            line-height: 70px;
+            border-bottom: 1px dotted #ddd;
+            font-size: 20px;
+            margin-top: 0px;
+
+          }
+          .contentBox{
+            padding-bottom: 10px;
+          }
+          .col{
+            width: 100%;
+          }
+          .form-control{
+            float: left;
+            width: 50%;
+          }
+          .editor-alert-box{
+            width: 50%;
+            margin: 0px auto;
+            margin-bottom: 20px;
+          }
+          .nav-tabs{
+            width: 900px;
+            margin: 0 auto;
+          }
+          .nav-tabs li a:hover,.nav-tabs li.active a:focus{
+            background:#f19191;
+            color: #fff;
+          }
+          .editor-user{
+            width: 1000px;
+            margin: 20px auto;
+
+          }
+          .nav-tabs a{
+            display: inline-block;
+          }
+          .editor-user-head{
+            width: 80px;
+            height: 80px;
+
+          }
+          .editor-user-head a{
+            display: inline-block;
+          }
+          .editor-user-head img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+          }
+          .editor-user-name{
+            margin-left: 30px;
+            font-size: 24px;
+            height: 80px;
+            line-height: 80px;
+          }
+          .deal-select{
+            width: 900px;
+            margin: 20px auto;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 20px;
+          }
+          .deal-select-name{
+        
+           margin-right: 10px;
+          }
+          .deal-selector{
+            width: 70px;
+            height: 22px;
+            line-height: 22px;
+            padding: 0px 1px;
+            margin-right: 20px;
+          }
+          .table{
+            width: 900px;
+            
+          }
+
+            /* tr:nth-child(2n+1){
+             background:grey;
+                       }
+                       .table-hover{
+            background-color: pink;
+                       }  */
+          tr a{
+            display: inline-block;
+          }
+           tr:hover{
+            background: #ccc;
+           }
+           .deal-page{
+            width: 500px;
+            margin: 50px auto;
+            margin-bottom: 0px;
+           }
+          .pagination .active a,.pagination .active a:hover{
+            background: #f19191;
+            border: 1px solid #f19191;
+          }

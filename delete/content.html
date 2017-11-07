@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="view-port" content="width=device-width,inital-scale=1">
+  <!-- 显示窗口宽度是客户端的屏幕宽度，显示的文字和图形的初始比例是 1.0-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <!-- 告诉IE浏览器采用最新的渲染模式 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!--[if IE 7]>
+<link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+<![endif]-->
+<link rel="stylesheet" href="css/ostrich-sans.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/myreset.css">
+  <link rel="stylesheet" href="css/text13.css">
+  <!-- 瀑布流 -->
+
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
+ <!--  <link rel="stylesheet" href="拖动test.css"> -->
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-validation-1.14.0/lib/jquery.js"></script>
+  <script src="js/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+  <script src="js/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+<!--   <script type="text/javascript" src="js/text.js"></script> -->
+  <script type="text/javascript" src="js/test.js"></script>
+<style type="text/css">
+  
+.center{
+  width: 60%;
+  margin: 0 auto;
+}
+.content_main{
+  font-family: "Tahoma","微软雅黑";
+  font-size: 16px;
+  line-height: 1.5;
+  background: #fff;
+  float: left;
+  width: 65%;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.content_main .content_img{
+  height: 500px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.content_main .content_img img{
+ width: 100%;
+
+}
+.content_tit{
+  width: 200px;
+  margin: 30px auto;
+}
+.content_tit h3{
+  font-size: 30px;
+}
+
+.content_mid{
+  margin: 20px 50px;
+  width: 85%;
+}
+.content_author{
+  float: left;
+}
+.content_share,.content_like{
+float: right;
+}
+.content_like{
+  color: pink;
+  margin-top: 20px;
+  border: 1px dashed pink;
+  border-radius: 20px;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.content_like a{
+  color: pink;
+}
+.content_author_head{
+  float: left;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; 
+  overflow: hidden;
+}
+.content_author_head img{
+  width: 100%;
+}
+.content_author_right{
+  float: left;
+  margin-left: 20px;
+}
+.content_author_name{
+  margin-top: 10px;
+}
+.content_author_name a{
+  color: #999;
+}
+.content_author_time{
+  color: #ccc;
+}
+.content_share{
+  margin-right: 30px;
+  margin-top: 20px;
+} 
+.content_share_item{
+  float:left;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  margin-left: 5px;
+}
+.fa-heart{
+  color:pink;
+  font-size: 20px;
+}
+.fa-wechat{
+  color: #389b4c;
+}
+.wechat-circle{border: 1px solid #389b4c;}
+.fa-weibo{
+  color:#c03f3f;
+}
+.weibo-circle{border: 1px solid #c03f3f;}
+.fa-qq{
+  color: #1680d5;
+}
+.qq-circle{border: 1px solid #1680d5;}
+.fa-tencent-weibo{
+  color:#298ab8;
+}
+.tencent-weibo-circle{border: 1px solid #298ab8;}
+
+.content_text{
+ margin:50px;
+ margin-top: 0;
+}
+.content_text_imgBox{
+  margin: 20px 0;
+  overflow: hidden;
+}
+.content_text_imgBox img{
+  width: 100%;
+}
+.content_text_sub{
+  color: #a09e9e;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+/* 右侧 */
+.content_side{
+  background: #fff;
+  float: left;
+  width: 30%;
+  overflow: hidden;
+  margin-left: 5%
+}
+
+.content_side_top{
+  margin-top: 40px;
+  margin-left: 12%;
+}
+.content_side_tit{
+  
+  text-align: center;
+  font-size: 24px;
+  font-family: "宋体";
+  margin: 0 10px;
+  font-weight: bold;
+  width: 36%;
+}
+.content_side_line{
+  width: 20%;
+  margin-top: 20px;
+  color: #000;
+  border-top: 1px solid #999;
+}
+.content_side_item{
+  width: 80%;
+  margin: 30px auto;
+  overflow: hidden;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 20px;
+}
+.content_side_item:last-child{
+  border-bottom: none;
+}
+.content_side_item  a{
+  color: #000;
+  font-size: 14px;
+  font-family: "Tahoma";
+}
+.content_side_item img{
+  width: 100%;
+  margin: 10px 0;
+}
+
+</style>
+
+  <title>Joy乐享生活</title>
+ 
+</head>
+<body>
+<!-- 导航栏区 -->
+<div class="wrapper">
+  <div class="top">
+    <div class="navbar navbar-default navbar-fixed" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1">
+          <span class="sr-only">
+            Toggle navigation
+          </span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class ="icon-bar"></span>
+          </button>
+
+          <a href ="text13.html" class="navbar-brand icon">
+            <span class="title">乐享生活</span>
+            <i class="fa fa-pagelines fa-5x" aria-hidden="true"></i>
+          </a>
+          <div class="collapse navbar-collapse" id="collapse-1">
+            <ul class="nav navbar-nav">
+             
+              <li class="home"><a href="text13.html">首页<span class="line"></span>
+              <span class="fa fa-heart bubble"></span>
+              <i class="fa fa-home s-icon"></i>
+              </a></li> 
+              <li class="checked  gym"><a href="sport.html">健身<span class="line"></span>
+              <span class="fa fa-heart bubble"></span><i class="fa fa-google-wallet s-icon"></i>
+              </a></li>
+              <li class="trip"><a href="javascript:;">旅游<span class="line"></span>
+              <span class="fa fa-heart bubble"></span><i class="fa fa-plane s-icon"></i></a></li>
+              
+              <li class="makeup"><a href="javascript:;">时尚<span class="line"></span>
+              <span class="fa fa-heart bubble"></span><i class="fa fa-shopping-bag s-icon"></i></a></li>
+              <li class="food"><a href="javascript:;">美食<span class="line"></span>
+              <span class="fa fa-heart bubble"></span><i class="fa fa-cutlery s-icon"></i></a></li>
+              <li class="read"><a href="javascript:;">阅读<span class="line"></span>
+              <span class="fa fa-heart bubble"></span><i class="fa fa-book s-icon"></i></a></li>
+            </ul>
+          </div><!--  navbar-collapse -->
+        </div><!-- navbar-header -->
+      </div><!-- container -->
+    </div><!-- navbar-default -->
+  </div><!-- top -->
+</div><!-- wrapper -->
+
+<div class="center clear">
+ <div class="content_main">
+  <div class="content_img">
+    <img src="images/saw5.jpg" alt="">
+  </div>
+  
+  <div class="content_mid clear">
+    <div class="content_author clear">
+      <div class="content_author_head">
+        <a href=""><img src="images/saw1.jpg" alt=""></a>
+      </div>
+      <div class="content_author_right">
+        <div class="content_author_name">
+          <a href="">Ellins</a>
+        </div>
+        <div class="content_author_time">
+          5月9日
+        </div>
+      </div>
+    </div>
+    <div class="content_like">
+      <a href=""><i class="fa fa-heart fa-lg"></i>
+     50</a>
+    </div>
+    <div class="content_share clear">
+      <div class="content_share_item wechat-circle ">
+        <a href="" ><i class="fa fa-wechat fa-lg"></i></a>
+      </div>
+      <div class="content_share_item weibo-circle">
+        <a href=""><i class="fa fa-weibo fa-lg"></i></a>
+      </div>
+      <div class="content_share_item qq-circle">
+        <a href=""><i class="fa fa-qq fa-lg"></i></a>
+      </div>
+      <div class="content_share_item tencent-weibo-circle">
+       <a href=""> <i class="fa fa-tencent-weibo fa-lg"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="content_tit">
+   <h3>夏天的味道</h3>
+  </div>
+  <div class="content_text">
+      <p class="content_text_mes">川久保玲（左）、安德鲁·博尔顿和安娜·温图尔在今年的慈善舞会“川久保玲/ Comme des Garçons：中庸的艺术”新闻发布会上。图片版权：大都会艺术博物馆/ BFA.com</p>
+      <div class="content_text_imgBox">
+        <a href=""><img src="images/saw6.jpg" alt=""></a>
+        <p class="content_text_sub">川久保玲（左）、安德鲁·博尔顿和安娜·温图尔在今年的慈善舞会“川久保玲/ Comme des Garçons：中庸的艺术”新闻发布会上。图片版权：大都会艺术博物馆/ BFA.com</p>
+      </div>
+      <p class="content_text_mes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam earum ipsa quo ipsum, reprehenderit excepturi, iusto, deserunt quod fugit illum cumque delectus! Obcaecati rem quas nostrum accusamus hic iusto, ipsa.</p>
+      <p class="content_text_mes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam earum ipsa quo ipsum, reprehenderit excepturi, iusto, deserunt quod fugit illum cumque delectus! Obcaecati rem quas nostrum accusamus hic iusto, ipsa.</p>
+      <div class="content_text_imgBox">
+        <a href=""><img src="images/saw2.jpg" alt=""></a>
+        <p class="content_text_sub">川久保玲（左）、安德鲁·博尔顿和安娜·温图尔在今年的慈善舞会“川久保玲/ Comme des Garçons：中庸的艺术”新闻发布会上。图片版权：大都会艺术博物馆/ BFA.com</p>
+      </div>
+      <p class="content_text_mes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam earum ipsa quo ipsum, reprehenderit excepturi, iusto, deserunt quod fugit illum cumque delectus! Obcaecati rem quas nostrum accusamus hic iusto, ipsa.</p>
+      <p class="content_text_mes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam earum ipsa quo ipsum, reprehenderit excepturi, iusto, deserunt quod fugit illum cumque delectus! Obcaecati rem quas nostrum accusamus hic iusto, ipsa.</p>
+      <div class="content_text_imgBox">
+        <a href=""><img src="images/saw3.jpg" alt=""></a>
+        <p class="content_text_sub">川久保玲（左）、安德鲁·博尔顿和安娜·温图尔在今年的慈善舞会“川久保玲/ Comme des Garçons：中庸的艺术”新闻发布会上。图片版权：大都会艺术博物馆/ BFA.com</p>
+      </div>
+      <p class="content_text_mes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam earum ipsa quo ipsum, reprehenderit excepturi, iusto, deserunt quod fugit illum cumque delectus! Obcaecati rem quas nostrum accusamus hic iusto, ipsa.</p>
+  </div>
+  <div class="content_footer">
+    <div class="content_footer_share">ssss</div>
+  </div>
+</div>
+
+<!-- 右边 -->
+  <div class="content_side">
+   <div class="content_side_top clear">
+     <div class="content_side_line fl"></div>
+     <div class="content_side_tit fl">
+       推荐
+     </div>
+     <div class="content_side_line fl"></div>
+    </div>
+   <div class="content_side_item">
+    <a href="">
+      <div class="content_side_item_img">
+       <img src="images/img_8.jpg" alt="">
+     </div>
+     <div class="content_side_item_tit">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis unde 
+     </div>
+    </a>
+   </div>
+   <div class="content_side_item">
+    <a href="">
+      <div class="content_side_item_img">
+       <img src="images/img_7.jpg" alt="">
+     </div>
+     <div class="content_side_item_tit">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis unde 
+     </div>
+    </a>
+   </div>
+   <div class="content_side_item">
+    <a href="">
+      <div class="content_side_item_img">
+       <img src="images/img_9.jpg" alt="">
+     </div>
+     <div class="content_side_item_tit">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis unde 
+     </div>
+    </a>
+   </div>
+   <div class="content_side_item">
+    <a href="">
+      <div class="content_side_item_img">
+       <img src="images/img_10.jpg" alt="">
+     </div>
+     <div class="content_side_item_tit">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis unde 
+     </div>
+    </a>
+   </div>
+  </div>
+</div>
+  <!-- 底部 -->
+<div class="footer">
+  <div class="box">
+    <div class="link link-miss">
+      <a href=""><span class="icon"><i class="fa fa-weibo fa-5x" aria-hidden="true"></i>
+      <a href="" class="button">
+      <span class="line line-top"></span>
+      <span class="line line-right"></span>
+      <span class="line line-bottom"></span>
+      <span class="line line-left"></span>
+      <div class="tip weibo"><em></em>
+      <span></span>分享到微博</div>
+      微博</a>
+    </div>
+    <div class="link link-play">
+      <a href=""><span class="icon"><i class="fa fa-qq fa-5x" aria-hidden="true"></i>
+      <a href="" class="button">
+      <span class="line line-top"></span>
+      <span class="line line-right"></span>
+      <span class="line line-bottom"></span>
+      <span class="line line-left"></span>
+      <div class="tip qq"><em></em>
+      <span></span>分享到QQ空间</div>
+      QQ</a>
+    </div>
+    <div class="link link-touch">
+      <a href=""><span class="icon"><i class="fa fa-weixin fa-5x" aria-hidden="true"></i>
+      </span></a>
+      <a href="" class="button">
+      <span class="line line-top"></span>
+      <span class="line line-right"></span>
+      <span class="line line-bottom"></span>
+      <span class="line line-left"></span>
+      <div class="tip weixin"><em></em>
+      <span></span>分享到微信</div>
+      微信</a>
+    </div>
+
+    <!-- 划过button时，上面出现提示信息 这个div不能放在每一个link里 因为提示信息是自适应的，并且内容可能超过Link的宽度，所以要相对于box定位 -->
+      
+    
+  </div><!-- box --><div class="footer-mask"></div> 
+  </div><!-- footer --> 
+  <div class="mes">
+    <p><a href="">关于我们</a><span>|</span><a href="">联系我们</a><span>|</span><a href="">版权声明</a></p>
+    <p >2017 乐享生活 版权所有 Copyright&copy;2017</p>
+  </div>
+  
+  <!-- 侧边栏 -->
+ <div id="sidebar">
+  <div class="top">
+    <div id="register" class="item" >
+      <a href="javascript:showDialog();">
+                <i class="fa fa-user-plus" aria-hidden="true"></i>
+            <div>注册</div>
+          </a>
+        </div>
+        <div id="login" class="item">
+            <a href="javascript:;">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+              <div>登录</div>
+            </a>
+        </div>
+        <div id="user" class="item">
+            <a href="me_show.html">
+                <i class="glyphicon glyphicon-user"></i>
+              <div>我</div>
+           </a>
+        </div>
+        <div id="colloction" class="item">
+            <a href="collect.html">
+                <i class="glyphicon glyphicon-star"></i>
+              <div>收藏</div>
+            </a>
+        </div>
+
+        <div id="foot" class="item">
+            <a href="saw.html">
+                <i class="glyphicon glyphicon-eye-open"></i>
+              <div>看过</div>
+              <span class="content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore earum veniam, quas voluptas sequi nostrum corrupti accusantium natus ullam, dolorem temporibus architecto labore praesentium dolor maxime ut ipsa eveniet! Quia.
+              </span>
+            </a>
+        </div>
+  </div><!-- top -->
+</div> <!-- sidebar -->
+<!-- 关闭侧边栏 -->
+<div id="closeBar">
+  <span>
+        <i class="glyphicon glyphicon-remove"></i>
+    </span>
+</div>
+
+
+<!-- 返回顶部 -->
+<div class="toolbar">
+    <a href="javascript:;" class="toolbar-item">
+      <span class="toolbar-btn">
+        <i class="toolbar-icon fa fa-weixin"></i>
+        <span class="toolbar-text">公众<br>账号</span>
+      </span>
+      <span class="toolbar-layer toolbar-layer-weixin"></span>
+    </a>
+    <a href="javascript:;" class="toolbar-item">
+      <span class="toolbar-btn">
+        <i class="toolbar-icon fa fa-commenting"></i>
+        <span class="toolbar-text">意见<br>反馈</span>
+      </span>
+      
+    </a>
+    <a href="javascript:;" class="toolbar-item">
+      <span class="toolbar-btn">
+        <i class=" toolbar-icon fa fa-cloud-download"></i>
+        <span class="toolbar-text">APP<br>下载</span>
+      </span>
+      <span class="toolbar-layer toolbar-layer-app"></span>
+    </a>
+    <a id="backtop" href="javascript:;" class="toolbar-item">
+      <span class="toolbar-btn">
+        <i class="toolbar-icon glyphicon glyphicon-chevron-up"></i>
+        <span class="toolbar-text">返回<br>顶部</span>
+      </span>
+      
+    </a>
+  </div> 
+
+
+
+
+
+<div class="ui-mask" id="masks" ></div>
+
+<div class="ui-dialog" id="dialogMove">
+
+<div class="titBox" id="dialogDrag">
+  <div class="ui-dialog-title"   onselectstart="return false">
+    
+   JOY
+
+    <a class="ui-dialog-closebutton" href="javascript:hideDialog();"></a>
+
+  </div>
+</div>
+  
+<div class='contentBox'>
+<form  id="registerForm" method="get" action="">
+<div class='col clear '>
+<div class='txt'>账&nbsp;&nbsp;&nbsp;&nbsp;号:</div>
+<input name="id" type='text' class='box ' placeholder='请输入账号' >
+
+</div>
+<div class='col clear'>
+<div class='txt'>密&nbsp;&nbsp;&nbsp;&nbsp;码:</div>
+<input name="psw" id="psw" type='password' class='box' placeholder='请输入密码'  >
+</div>
+<div class='col clear'>
+<div class='txt'>确认密码:</div>
+<input name="rpsw" type='password' class='box' placeholder='请再次输入密码'  >
+</div>
+<div class='col clear'>
+<div class='txt'>邮&nbsp;&nbsp;&nbsp;&nbsp;箱:</div>
+<input name="email" type='email' class='box' placeholder='请输入邮箱'>
+</div>
+
+<input type="submit" value="立即注册" class="login-btn" >
+</form>
+</div>
+</div>
+
+ 
+ <script type="text/javascript" src="拖动test.js"></script>
+ <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/colorfinder-1.1.js"></script>
+    <script src="js/gridScrollFx.js"></script>
+    <script>
+      new GridScrollFx( document.getElementById( 'grid' ), {
+        viewportFactor : 0.4
+      } );
+    </script>
+</body>
+</html>

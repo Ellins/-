@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="view-port" content="width=device-width,inital-scale=1">
+  <!-- 显示窗口宽度是客户端的屏幕宽度，显示的文字和图形的初始比例是 1.0-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <!-- 告诉IE浏览器采用最新的渲染模式 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!--[if IE 7]>
+<link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+<![endif]-->
+<link rel="stylesheet" href="css/ostrich-sans.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/myreset.css">
+  <link rel="stylesheet" href="css/text13.css">
+  <link rel="stylesheet" type="text/css" href="css/me.css">
+  <link rel="stylesheet" href="css/changeImg.css">
+<!--   <link rel="stylesheet" type="text/css" href="css/select.css" />
+ <script src="js/select.js"></script> -->
+ <!--  <link rel="stylesheet" href="拖动test.css"> -->
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-validation-1.14.0/lib/jquery.js"></script>
+  <script src="js/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+  <script src="js/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+<!--   <script type="text/javascript" src="js/text.js"></script> -->
+  <script type="text/javascript" src="js/test.js"></script>
+
+  <script type="text/javascript" src="js/cropbox.js"></script>
+  <script type="text/javascript" src="js/cut_img.js"></script>
+  <title>Joy乐享生活</title>
+</head>
+<body>
+<!-- 导航栏区 -->
+<div class="wrapper">
+  <div class="top">
+    <div class="navbar navbar-default navbar-fixed" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1">
+          <span class="sr-only">
+            Toggle navigation
+          </span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class ="icon-bar"></span>
+          </button>
+
+          <a href ="text13.html" class="navbar-brand icon">
+            <span class="title">乐享生活</span>
+            <i class="fa fa-pagelines fa-5x" aria-hidden="true"></i>
+          </a>
+          <div class="collapse navbar-collapse" id="collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="checked home"><a href="text13.html">首页<span class="line"></span>
+              <span class="fa fa-heart bubble"></span>
+              <i class="fa fa-home s-icon"></i>
+              </a></li>
+              <li class="gym "><a href="sport.html">健身<span class="line"></span>
+              <span class="fa fa-heart bubble"></span><i class="fa fa-google-wallet s-icon"></i>
+              </a></li>
+              <li class="trip"><a href="trip.html">旅游<span class="line"></span>
+              <span class="fa fa-heart bubble"></span><i class="fa fa-plane s-icon"></i></a></li>
+              <li class="makeup"><a href="fashion.html">时尚<span class="line"></span>
+              <span class="fa fa-heart bubble"></span><i class="fa fa-shopping-bag s-icon"></i></a></li>
+              <li class="food"><a href="food.html">美食<span class="line"></span>
+              <span class="fa fa-heart bubble"></span><i class="fa fa-cutlery s-icon"></i></a></li>
+              <li class="read"><a href="read.html">阅读<span class="line"></span>
+              <span class="fa fa-heart bubble"></span><i class="fa fa-book s-icon"></i></a></li>
+            </ul>
+          </div><!--  navbar-collapse -->
+        </div><!-- navbar-header -->
+      </div><!-- container -->
+    </div><!-- navbar-default -->
+  </div><!-- top -->
+</div><!-- wrapper -->
+
+
+<div class="timelist">
+   <div class="topper">
+   </div>
+
+  <div class="head_img">
+    <a href="javascript:;"><img src="images/saw1.jpg" alt=""></a>
+    <div class="img-cover"><a href="javascript:showChangeImg();">更换头像</a></div>
+  </div>
+
+  <div class="text">
+
+     <div class='contentBox'>
+ 
+<form  id="MyInfo" method="get" action="">
+<div class='col clear '>
+<div class='txt me_txt'>昵&nbsp;&nbsp;&nbsp;&nbsp;称:</div>
+<input name="" type='text' class='box me_box' placeholder='请输入昵称' >
+
+</div>
+<div class='col clear'>
+<div class='txt me_txt'>性&nbsp;&nbsp;&nbsp;&nbsp;别:</div>
+<div class="sexBox radioGroup">
+<input type="radio" name="sex" id="male"   checked="">
+<label for="male"><!-- <i class="fa fa-mars" aria-hidden="true" ></i> -->男</label>
+<input type="radio" name="sex" id="female">
+<label for="female"><!-- <i class="fa fa-venus " aria-hidden="true" ></i> -->女</label>
+</div>
+</div>
+
+<!-- <div class='col clear'>
+<div class='txt'>兴&nbsp;&nbsp;&nbsp;&nbsp;趣:</div>
+
+
+    <div id="dd" class="wrapper-dropdown-3" tabindex="1">
+      <span class="select-title">&nbsp;&nbsp;&nbsp;&nbsp;请选择身份</span>
+      <ul class="dropdown">
+      <li><a href="#"><i class="fa fa-graduation-cap fa-lg"></i>学生</a></li>
+      <li><a href="#"><i class="fa fa-child fa-lg"></i>平民</a></li>
+      <li><a href="#"><i class="fa fa-diamond fa-lg"></i>土豪</a></li>
+      
+        <li><a href="#"><i class="fa fa-futbol-o fa-lg"></i> 健身</a></li>
+       <li><a href="#"><i class="fa fa-plane fa-lg"></i>旅游</a></li>
+       <li><a href="#"><i class="fa fa-venus fa-lg"></i>美妆</a></li>
+       <li><a href="#"><i class="fa fa-shopping-bag fa-lg"></i>服装</a></li>
+       <li><a href="#"><i class="fa fa-scissors fa-lg"></i>发型</a></li>
+       <li><a href="#"><i class="fa fa-cutlery fa-lg"></i>美食</a></li>
+       <li><a href="#"><i class="fa fa-book fa-lg"></i>看书</a></li>
+       <li><a href="#"><i class="fa fa-film fa-lg"></i>影视</a></li>
+       <li><a href="#"><i class="fa fa-paper-plane fa-lg"></i>DIY</a></li>
+       <li><a href="#"><i class="fa fa-camera-retro fa-lg"></i>摄影</a></li>
+       <li><a href="#"><i class="fa fa-paint-brush fa-lg"></i>美术</a></li>
+      </ul>
+    </div> 
+</div>
+ -->
+<input type="submit" value="保存" class="login-btn me-login-btn" >
+</form>
+</div>
+  </div>
+  
+</div>
+
+  <!-- 底部 -->
+<div class="footer">
+  <div class="box">
+    <div class="link link-miss">
+      <a href=""><span class="icon"><i class="fa fa-weibo fa-5x" aria-hidden="true"></i>
+      <a href="" class="button">
+      <span class="line line-top"></span>
+      <span class="line line-right"></span>
+      <span class="line line-bottom"></span>
+      <span class="line line-left"></span>
+      <div class="tip weibo"><em></em>
+      <span></span>分享到微博</div>
+      微博</a>
+    </div>
+    <div class="link link-play">
+      <a href=""><span class="icon"><i class="fa fa-qq fa-5x" aria-hidden="true"></i>
+      <a href="" class="button">
+      <span class="line line-top"></span>
+      <span class="line line-right"></span>
+      <span class="line line-bottom"></span>
+      <span class="line line-left"></span>
+      <div class="tip qq"><em></em>
+      <span></span>分享到QQ空间</div>
+      QQ</a>
+    </div>
+    <div class="link link-touch">
+      <a href=""><span class="icon"><i class="fa fa-weixin fa-5x" aria-hidden="true"></i>
+      </span></a>
+      <a href="" class="button">
+      <span class="line line-top"></span>
+      <span class="line line-right"></span>
+      <span class="line line-bottom"></span>
+      <span class="line line-left"></span>
+      <div class="tip weixin"><em></em>
+      <span></span>分享到微信</div>
+      微信</a>
+    </div>
+
+    <!-- 划过button时，上面出现提示信息 这个div不能放在每一个link里 因为提示信息是自适应的，并且内容可能超过Link的宽度，所以要相对于box定位 -->
+      
+    
+  </div><!-- box --><div class="footer-mask"></div> 
+  </div><!-- footer --> 
+  <div class="mes">
+    <p><a href="">关于我们</a><span>|</span><a href="">联系我们</a><span>|</span><a href="">版权声明</a></p>
+    <p >2017 乐享生活 版权所有 Copyright&copy;2017</p>
+  </div>
+  
+  <!-- 侧边栏 -->
+ <div id="sidebar">
+  <div class="top">
+    <div id="register" class="item" >
+      <a href="javascript:showDialog();">
+                <i class="fa fa-user-plus" aria-hidden="true"></i>
+            <div>登录/<br>注册</div>
+          </a>
+        </div>
+        <!-- <div id="login" class="item">
+            <a href="javascript:showDialog();">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+              <div>登录</div>
+            </a>
+        </div> -->
+        <div id="user" class="item">
+            <a href="me_show.html">
+                <i class="glyphicon glyphicon-user"></i>
+              <div>我</div>
+           </a>
+        </div>
+        <div id="colloction" class="item">
+            <a href="collect2.html">
+                <i class="glyphicon glyphicon-star"></i>
+              <div>收藏</div>
+            </a>
+        </div>
+
+        <div id="foot" class="item">
+            <a href="saw.html">
+                <i class="glyphicon glyphicon-eye-open"></i>
+              <div>看过</div>
+            </a>
+        </div>
+  </div><!-- top -->
+</div> <!-- sidebar -->
+<!-- 关闭侧边栏 -->
+<div id="closeBar">
+  <span>
+        <i class="glyphicon glyphicon-remove"></i>
+    </span>
+</div>
+
+
+<!-- 返回顶部 -->
+<div class="toolbar">
+    <a href="javascript:;" class="toolbar-item">
+      <span class="toolbar-btn">
+        <i class="toolbar-icon fa fa-weixin"></i>
+        <span class="toolbar-text">公众<br>账号</span>
+      </span>
+      <span class="toolbar-layer toolbar-layer-weixin"></span>
+    </a>
+    <a href="javascript:;" class="toolbar-item">
+      <span class="toolbar-btn">
+        <i class="toolbar-icon fa fa-commenting"></i>
+        <span class="toolbar-text">意见<br>反馈</span>
+      </span>
+      
+    </a>
+    <a href="javascript:;" class="toolbar-item">
+      <span class="toolbar-btn">
+        <i class=" toolbar-icon fa fa-cloud-download"></i>
+        <span class="toolbar-text">APP<br>下载</span>
+      </span>
+      <span class="toolbar-layer toolbar-layer-app"></span>
+    </a>
+    <a id="backtop" href="javascript:;" class="toolbar-item">
+      <span class="toolbar-btn">
+        <i class="toolbar-icon glyphicon glyphicon-chevron-up"></i>
+        <span class="toolbar-text">返回<br>顶部</span>
+      </span>
+      
+    </a>
+  </div> 
+
+
+
+
+
+<div class="ui-mask" id="masks" ></div>
+
+<div class="ui-dialog" id="dialogMove">
+
+<div class="titBox" id="dialogDrag">
+  <div class="ui-dialog-title"   onselectstart="return false">
+    
+   JOY
+
+    <a class="ui-dialog-closebutton" href="javascript:hideDialog();"></a>
+
+  </div>
+</div>
+  
+<div class='contentBox'>
+<form  id="myInfo" method="get" action="">
+<div class='col clear '>
+<div class='txt'>账&nbsp;&nbsp;&nbsp;&nbsp;号:</div>
+<input name="id" type='text' class='box ' placeholder='请输入账号' >
+
+</div>
+<div class='col clear'>
+<div class='txt'>密&nbsp;&nbsp;&nbsp;&nbsp;码:</div>
+<input name="psw" id="psw" type='password' class='box' placeholder='请输入密码'  >
+</div>
+<div class='col clear'>
+<div class='txt'>确认密码:</div>
+<input name="rpsw" type='password' class='box' placeholder='请再次输入密码'  >
+</div>
+<div class='col clear'>
+<div class='txt'>邮&nbsp;&nbsp;&nbsp;&nbsp;箱:</div>
+<input name="email" type='email' class='box' placeholder='请输入邮箱'>
+</div>
+
+<input type="submit" value="立即注册" class="login-btn" >
+</form>
+</div>
+</div>
+
+
+
+<!-- showChangeImg -->
+
+ <div class="img-mask" id="Img_mask" ></div>
+ <div class="ImgBigBox">
+    <div class="Imgcontainer" id="Img_move">
+      <div class="imageBox">
+        <div class="thumbBox"></div>
+        <div class="spinner" style="display: none">Loading...</div>
+      </div>
+      <div class="action"> 
+        <div class="new-contentarea tc"> 
+          <a href="javascript:void(0)" class="upload-img">
+              <label for="upload-file">上传图像</label>
+          </a>
+          <input type="file" class="" name="upload-file" id="upload-file" />
+        </div>
+
+        <input type="button" id="btnCrop"  class="Btnsty_peyton" value="裁切">
+        <input type="button" id="btnZoomIn" class="Btnsty_peyton" value="+"  >
+        <input type="button" id="btnZoomOut" class="Btnsty_peyton" value="-" >
+        <input type="button" id="confirm"  class="Btnsty_peyton Btnsty_peyton_2" value="确定">
+        <input type="button" id="cancel"  class="Btnsty_peyton Btnsty_peyton_2" value="取消">
+      </div>
+      <div class="cropped"></div>
+    </div>
+  </div>
+
+ <script type="text/javascript" src="拖动test.js"></script>
+ <script type="text/javascript">
+    var test=new Vcity.CitySelector({input:'citySelect'});
+  </script>
+  <!-- <script src="js/magicselection.js"></script>
+    <script>
+      (function() {
+        var selList = document.getElementById( 'me-select-list' ),
+          items = selList.querySelectorAll( 'li' );
+        
+        // fill the initial checked elements (mozilla)
+        [].slice.call( items ).forEach( function( el ) {
+          el.parentNode.className = el.checked ? 'selected' : '';
+        } );
+  
+        function checkUncheck( el ) {
+          el.parentNode.className = el.checked ? '' : 'selected';
+          el.checked = !el.checked;
+        }
+  
+        new magicSelection( selList.querySelectorAll( 'li > input[type="checkbox"]' ), {
+          onSelection : function( el ) { checkUncheck( el ); },
+          onClick : function( el ) {
+            el.parentNode.className = el.checked ? 'selected' : '';
+          }
+        } );
+  
+      } )();
+    </script> -->
+</body>
+</html>

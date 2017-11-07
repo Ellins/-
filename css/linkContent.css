@@ -1,0 +1,213 @@
+.center{
+ /*  width: 60%; */
+ width: 1000px;
+  margin: 0 auto;
+}
+.content_main{
+  font-family: "Tahoma","微软雅黑";
+  font-size: 16px;
+  line-height: 1.5;
+  background: #fff;
+  float: left;
+ /*  width: 65%; */
+ width: 680px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.content_main .content_img{
+  height: 500px;
+ /*  width: 100%; */
+ width: 680px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.content_main .content_img img{
+ width: 100%;
+
+}
+.content_tit{
+  width: 200px;
+  margin: 30px auto;
+}
+.content_tit h3{
+  font-size: 30px;
+}
+
+.content_mid{
+  margin: 20px 50px;
+  width: 85%;
+}
+.content_author{
+  float: left;
+}
+.content_share,.content_like{
+float: right;
+}
+.content_like{
+  color: pink;
+  margin-top: 20px;
+  border: 1px dashed pink;
+  border-radius: 20px;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.content_like a{
+  color: pink;
+}
+.content_author_head{
+  float: left;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; 
+  overflow: hidden;
+}
+.content_author_head img{
+  width: 100%;
+}
+.content_author_right{
+  float: left;
+  margin-left: 20px;
+}
+.content_author_name{
+  margin-top: 10px;
+}
+.content_author_name a{
+  color: #999;
+}
+.content_author_time{
+  color: #ccc;
+}
+.content_share{
+  margin-right: 30px;
+  margin-top: 20px;
+} 
+.content_share_item{
+  float:left;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  font-size: 15px;
+  line-height: 35px;
+  text-align: center;
+  margin-left: 5px;
+}
+.fa-heart{
+  color:pink;
+  font-size: 20px;
+}
+.fa-wechat{
+  color: #389b4c;
+}
+.wechat-circle{border: 1px solid #389b4c;}
+.fa-weibo{
+  color:#c03f3f;
+}
+.weibo-circle{border: 1px solid #c03f3f;}
+.fa-qq{
+  color: #1680d5;
+}
+.qq-circle{border: 1px solid #1680d5;}
+.fa-tencent-weibo{
+  color:#298ab8;
+}
+.tencent-weibo-circle{border: 1px solid #298ab8;}
+
+.content_text{
+ margin:50px;
+ margin-top: 0;
+}
+.content_text_imgBox{
+  margin: 20px 0;
+  overflow: hidden;
+}
+.content_text_imgBox img{
+  width: 100%;
+}
+.content_text_sub{
+  color: #a09e9e;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+/* 右侧 */
+.content_side{
+  background: #fff;
+  float: right;
+  /* width: 30%; */
+  width: 300px;
+  overflow: hidden;
+ /*  margin-left: 5% */
+}
+
+.content_side_top{
+  margin-top: 40px;
+  margin-left: 12%;
+}
+.content_side_tit{
+  
+  text-align: center;
+  font-size: 24px;
+  font-family: "宋体";
+  margin: 0 10px;
+  font-weight: bold;
+  /* width: 36%; */
+  width: 100px;
+}
+.content_side_line{
+/*   width: 20%; */
+width: 50px;
+  margin-top: 20px;
+  color: #000;
+  border-top: 1px solid #999;
+}
+.content_side_item{
+/*   width: 80%; */
+  width: 250px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 20px;
+}
+.content_side_item:last-child{
+  border-bottom: none;
+}
+.content_side_item  a{
+  color: #000;
+  font-size: 14px;
+  font-family: "Tahoma";
+}
+.content_side_item img{
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* 下面分享 */
+.content_footer{
+  margin: 50px;
+}
+.content_footer_share{
+  border-top: 1px dashed #ccc;
+  width: 500px;
+  margin: 0 auto;
+  padding-top:50px; 
+}
+.content_footer_share_item{
+  float: left;
+  font-size: 30px;
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #000;
+  margin: 0 30px;
+}
+.content_footer_share_item .fa-wechat,
+.content_footer_share_item .fa-weibo,
+.content_footer_share_item .fa-qq,
+.content_footer_share_item .fa-tencent-weibo{
+ color: #000;
+}

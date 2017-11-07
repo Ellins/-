@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="view-port" content="width=device-width,inital-scale=1">
+  <!-- 显示窗口宽度是客户端的屏幕宽度，显示的文字和图形的初始比例是 1.0-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <!-- 告诉IE浏览器采用最新的渲染模式 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!--[if IE 7]>
+<link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+<![endif]-->
+<!-- <link rel="stylesheet" href="css/ostrich-sans.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/myreset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- 编辑 -->
+  <link rel="stylesheet" type="text/css" href="../joy/wangEditor/dist/css/wangEditor.min.css">
+  <link rel="stylesheet" href="css/passage.css">
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-validation-1.14.0/lib/jquery.js"></script>
+  <script src="js/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+  <script src="js/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+
+<!--   <script type="text/javascript" src="js/text.js"></script> -->
+  <script type="text/javascript" src="js/test.js"></script>
+
+<script type="text/javascript" src="js/拖动test.js"></script>
+
+  <title>Joy乐享生活</title>
+
+</head>
+<body>
+
+
+<!-- 内容区域 -->
+         
+  <!-- <div class="editor-btn-box clear">
+    <div class="editor-back">
+      <a href="deal.html" class="editor-back-btn">返回</a>
+    </div>
+    <div class="editor-btn">
+       <a href="javascript:showDialog();"><input type="submit" value="发布文章" class="editor-publish-btn"></a>
+      
+      <input type="button" value="取消" class="editor-cancle-btn">
+    </div>
+  </div>  -->
+ <div class="editor-box">
+   <div class="editor-user clear">
+    <div class="editor-user-head fl">
+      <a href="javascript:;"><img src="images/saw1.jpg" alt=""></a>
+    </div>
+    <div class="editor-user-name fl">Ellins</div>
+  </div>
+      
+      <!-- <div class="editor-btn">
+         <a href="editor.html">
+         <input type="button" value="写文章" class="editor-write-btn">
+         </a>
+       </div>  -->
+  <ul class="nav nav-tabs">
+    <li role="presentation"><a href="articleSort.html">文章管理</a></li>
+    <input type="button" value="取消" class="editor-write-btn" onclick="alertCancle()">
+    <a href="javascript:showDialog();" class="editor-write-btn">
+         <input type="submit" value="发布" >
+    </a>
+  </ul>
+  <div class="editor-title-box"><input type="text" placeholder="无标题文章" class="editor-title" value="今夏最潮流"></div>
+   <div class="editor-main">
+    <div id="editor-container" class="editor-container">
+        <div id="editor-trigger"><p>2017，流行什么？</p></div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <!-- 底部 -->
+
+<!--   <div class="mes">
+  <p><a href="">关于我们</a><span>|</span><a href="">联系我们</a><span>|</span><a href="">版权声明</a></p>
+  <p >2017 乐享生活 版权所有 Copyright&copy;2017</p>
+</div> -->
+  
+
+
+<!-- <div class="editor-mask"></div> -->
+
+<div class="ui-mask" id="masks" ></div>
+
+<div class="ui-dialog" id="dialogMove">
+
+<div class="titBox" id="dialogDrag">
+  <div class="ui-dialog-title"   onselectstart="return false">
+    
+  文章设置
+
+    <a class="ui-dialog-closebutton" href="javascript:hideDialog();"></a>
+
+  </div>
+</div>
+  
+<div class='contentBox'>
+<form  id="registerForm" method="get" action="">
+
+<div class='col clear '>
+
+<div class='txt'>文章类型:</div>
+<select class="form-control">
+  <option>原创</option>
+  <option>转载</option>
+</select>
+</div>
+
+
+<div class='col clear'>
+<div class='txt'>文章分类:</div>
+<select class="form-control">
+  <option>健身</option>
+  <option>时尚</option>
+  <option>美食</option>
+  <option>旅游</option>
+  <option>读书</option>
+</select>
+</div>
+</div>
+<div class="editor-alert-box">
+<input type="submit" value="发布" class="editor-publish-btn" >
+<input type="submit" value="取消" class="editor-cancle-btn" onclick="alertCancle()">
+</div>
+</form>
+</div>
+</div>
+
+
+
+
+
+ 
+<!--  <script type="text/javascript" src="拖动test.js"></script> 
+   <script type="text/javascript" src="data.js"></script>
+
+
+   <script type="text/javascript" src="fx.js"></script> -->
+   
+    <script type="text/javascript" src="../joy/wangEditor/dist/js/wangEditor.js"></script>
+    <!--<script type="text/javascript" src="../dist/js/wangEditor.min.js"></script>-->
+
+<!-- <script type="text/javascript" src="拖动test.js"></script>  -->
+    <script type="text/javascript" src="js/editor.js"></script>
+
+  
+   <!--  <script type="text/javascript">
+   
+       function alertCancle(){
+       var con=confirm("文章尚未保存！");
+       }
+     window.onbeforeunload=function(){
+      return "文章尚未保存！";
+   
+     }
+      
+     
+   </script> -->
+</body>
+</html>

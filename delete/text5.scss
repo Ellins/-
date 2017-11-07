@@ -1,0 +1,1044 @@
+
+$banner-a-width:16.66%;
+$mediaBig-checked-a-color:#fff;
+$mediaBig-checked-a-background:#000;
+$mediaBig-a-color:#656565;
+$mediaBig-a-fontsize:22px;
+$mediaBig-a-borderBottom:1px solid #ccc;
+$mediaBig-a-hover-color:#ff7838;
+$mediaSmall-navbar-header-background:#222;
+$mediaBig-carousel-img-height:500px;
+$mediaSmall-carousel-img-height:300px;
+
+
+body{
+	background-color:#f5f5f5;
+}
+@media screen and (min-width:767px) {
+.wrapper{
+
+	.top{
+		width: 100%;
+		position: relative;
+		top: 100px;
+		.navbar-default{
+			background:none;
+			border:none;
+			position:relative;
+			top: 10px;
+			.navbar-header{
+				width:100%; 
+				.navbar-nav{
+					width: 100%;
+					 .navbar-brand{
+					 	width:100%;
+					 	height: 100%;
+						display: inline-block;
+					}/* navbar-brand */
+			}/* navbar-header */			 
+					.checked{
+						a{
+							color: $mediaBig-checked-a-color;
+							background:$mediaBig-checked-a-background;
+							&:hover{
+								color: $mediaBig-checked-a-color;
+							}
+						}
+					}/* checked */
+					 li{
+						
+						display: inline-block;
+						width: $banner-a-width;
+						a{	
+							color: $mediaBig-a-color;
+							display: inline-block;
+							width: 90%;
+							text-align:center;
+							font-size:$mediaBig-a-fontsize;
+						    border-bottom:$mediaBig-a-borderBottom;
+						    &:hover{
+						    	color:$mediaBig-a-hover-color;
+						    }
+						}/* a */
+					} /* li */ 
+			}/*navbar-nav */
+		}/* navbar-default */
+	}/* top */
+}/* wrapper */
+
+
+	/* 滚动图片 */
+	.carousel{
+		position:relative;
+		top:100px;
+		width:80%;
+		margin:0 auto;	
+		overflow:hidden;
+		height:$mediaBig-carousel-img-height;
+		z-index: 1;
+
+	} 
+	.carousel-control{
+		z-index: 2;
+	}
+		
+		.carousel .item img{
+			width: 100%; 
+
+		}
+		.carousel .item:hover {
+		-webkit-transform:scale(1);
+		-moz-transform:scale(1);
+		-ms-transform:scale(1);	
+		-o-transform:scale(1);
+		transform:scale(1);
+		
+		}
+		.carousel-indicators li{
+			box-shadow:1px 1px 20px #000;
+		}
+		.carousel-caption{
+			position:absolute;
+			top: 10%;
+			left: 0%;
+			color: #fff;
+			font-size: 60px;
+			text-shadow: 3px 3px 5px #000;
+			font-family:"Impact";
+			h3{
+				font-size: 60px;
+			}
+		}
+
+
+			.icon{
+				position:relative;
+				top: -90px;
+				left: 45%;
+
+			}
+			/* 图标 */
+			.fa{
+				position:relative;
+				
+				z-index: 1;
+			}
+			.title{
+				position:absolute;
+				letter-spacing: 5px;
+				margin-left: 80%;
+				font-size: 36px;
+				font-weight: bold;
+				font-family: "微软雅黑";
+				width: 100%;
+				line-height: 1.2;
+			}
+			/* 内容区 */
+	.content{
+		width:80%;
+		margin:0 auto;
+		margin-top:120px;
+		margin-bottom:50px;
+		font-family:"Tahoma","微软雅黑";
+		 .row{
+			.thumbnail{
+				cursor: pointer;
+				img{
+					height:300px;
+				}
+				.caption{
+					margin: 10px;
+					h3{
+						font-family:"Tahoma","幼圆";
+						font-weight:bold;
+					}
+					.text{
+						padding: 10px 0;
+						line-height: 1.5;
+					}
+					.sub-left{
+							color:#838282;
+					}
+					.sub-right{
+						a{
+							display: inline-block;
+							color:#cacaca;
+							&:hover{
+								color: $mediaBig-a-hover-color;
+							}
+						}
+					}/* sub-right */
+				}/* caption */
+			}/* thumbnail */
+		}/* row */
+
+		 .btn{
+		padding: 10px 5%;
+	    color:#b16f6f;
+	    background: #f3d1d1;
+	    position: relative;
+	    top: 10px;
+	    left:-8%;
+	    margin:0 50%;
+		text-align:center;
+	    &:hover{
+	    	color: #fff;
+	    	background:#fd9090;
+	  	}
+		}
+	}/* content */
+
+
+	/* 底部 */
+	.footer{
+
+		width:100%;
+		position: relative;
+	 	background:url(../img/black4.jpg) center center no-repeat; 
+		background-size:cover;
+		z-index:0;
+		padding-top:10px;
+		padding-bottom:50px;
+	}
+	.footer-mask{
+		width:100%;
+		background:rgba(0,0,0,0.6);
+		height:100%;
+		position:absolute;
+		top:0;
+		left:0;
+		z-index:1;
+	}
+
+	.box{
+			width: 800px;
+			height: 200px;
+			margin: 20px auto;
+			position: relative;
+			z-index:2;
+		}
+		.box .link{
+			width: 205px;
+			height: 200px;
+			float: left;
+			/* 或者inline-block */
+			margin:0 20px;
+		}
+
+		.link .icon{
+			display: inline-block;
+			width:100%;
+			margin-bottom:100px;
+			top:70px;
+			left:12px;
+			z-index:3;
+
+			 /* 图标高度155*1.5倍 */ 
+			 -webkit-transition:0.2s ease-out;
+			  -moz-transition:0.2s ease-out;
+			   -o-transition:0.2s ease-out;
+			 transition:0.2s ease-out;
+			/*  IE9不支持transition 所以可以不写-ms- */
+		}
+		.link .icon .fa{
+			top:50%;
+			left:50%;
+			margin-left:-50px;
+			margin-top:-60px;
+			color:#fff;
+		}
+		.link .icon .fa-5x{
+			font-size:5em;
+		}
+		.link .icon:hover{
+		
+			-webkit-transform: scale(1.3);
+			/* 同时进行旋转和放大 如果写成-webkit-transform:; -webkit-transform:scale(1.3)则只会执行最后的scale*/
+			-moz-transform: scale(1.3);
+			-ms-transform: scale(1.3);
+			-o-transform: scale(1.3);
+			transform: scale(1.3);
+			opacity:0.8;
+
+				
+		}
+	/* 	.link-miss .icon{
+		background: url(../img/mission.png) no-repeat center center;
+	
+	}
+	.link-play .icon{
+		background: url(../img/play.png) no-repeat center center;
+	} */
+		/* .link-touch .icon{
+			background: url(../img/touch.png) no-repeat center center;
+		} */
+		.button{
+			display:block;
+			width: 180px;
+			height: 50px;
+			line-height: 50px;
+			text-decoration: none;
+			color: #fff;
+			font-family:"Candara", "幼圆";
+			font-size:20px;
+			border: 2px solid rgba(255,255,255,0.6);
+			/* padding-left: 60px; */
+			text-align:center;
+			margin: 0 auto;
+		/* 最终的button实际宽度是180px 而不用加padding和border */
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+			-o-box-sizing: border-box;
+			box-sizing: border-box;
+		
+		 	/* background: url(../img/allow.png)
+		 			130px center no-repeat;  */
+			-webkit-transition: 0.4s ease ;
+			-moz-transition: 0.4s ease ;
+			-ms-transition: 0.4s ease ;
+			-o-transition: 0.4s ease ;
+			transition: 0.4s ease ;
+
+			position: relative;
+			/* 给下面的线定位 */
+
+		}
+		.button:hover{
+			border: 2px solid #fff;
+			background-position:
+			140px center;
+			color:#2dcb70;
+		}
+		.button .line{
+			display: block;
+			position: absolute;
+			/* 线需要移动 所以要定位 */
+			background: none;
+			/* 初始状态是看不到线的 */
+			-webkit-transition: 0.4s ease ;
+			-moz-transition: 0.4s ease ;
+			-ms-transition: 0.4s ease ;
+			-o-transition: 0.4s ease ;
+			transition: 0.4s ease ;
+		}
+		.button:hover .line{
+			background: #fff;
+			/* 划过之后出现线条 */
+		}
+		.button .line-top{
+			height: 2px; /* 跟border一样高 */
+			width: 0; /* 由点变线 */
+			/* 初始状态 */
+			left: -110%;/* 距离比Button要宽 */
+			top: -2px;
+
+		}
+		.button:hover .line-top{
+			/* 最终状态 */
+			width: 100%;
+			left: -2px;/* 跟左边框对齐 */ 
+		}
+
+		.button .line-bottom{
+			height: 2px; /* 跟border一样高 */
+			width: 0; /* 由点变线 */
+			/* 初始状态 */
+			right: -110%;/* 距离比Button要宽 */
+			bottom: -2px;
+
+		}
+		.button:hover .line-bottom{
+			/* 最终状态 */
+			width: 100%;
+			right: -2px;/* 跟左边框对齐 */ 
+		}
+
+
+		.button .line-right{
+			width: 2px; /* 跟border一样高 */
+			height: 0; /* 由点变线 */
+			/* 初始状态 */
+			top: -110%;/* 距离比Button要宽 */
+			right: -2px;
+
+		}
+		.button:hover .line-right{
+			/* 最终状态 */
+			height: 100%;
+			top: -2px;/* 跟左边框对齐 */ 
+		}
+
+		.button .line-left{
+			width: 2px; /* 跟border一样高 */
+			height: 0; /* 由点变线 */
+			/* 初始状态 */
+			bottom: -110%;/* 距离比Button要宽 */
+			left: -2px;
+
+		}
+		.button:hover .line-left{
+			/* 最终状态 */
+			height: 100%;
+			bottom: -2px;/* 跟左边框对齐 */ 
+		}
+		.tip{
+			
+			position: absolute;
+			padding: 0 20px;
+			height: 35px;
+			line-height: 35px;
+			background: #2dcb70;
+			color: #fff;
+			font-size: 15px;
+			margin: 0 auto;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			-ms-border-radius: 3px;
+			-o-border-radius: 3px;
+			border-radius: 3px;
+			-webkit-transform: translateY(20px);
+			-moz-transform: translateY(20px);
+			-ms-transform: translateY(20px);
+			-o-transform: translateY(20px);
+			transform: translateY(20px);
+			-webkit-transition:all .5s;
+			-moz-transition:all .5s;
+			-ms-transition:all .5s;
+			-o-transition:all .5s;
+			transition:all .5s;
+			top: -50px;
+			/* 初始状态的tip与box顶部的距离 */
+			opacity: 0;
+			z-index:4;
+			
+		}
+		 .weibo,.weixin{
+			left:13%;
+		}
+		 .qq{
+			left:7%;
+		}
+		
+		 
+		.tip em{
+			font-style: normal;
+
+		}
+		.tip span{
+			display: block;
+			width: 0px;
+			height: 0px;
+			overflow: hidden;
+			border: 7px solid transparent;
+			border-top-color:#2dcb70; 
+			position: absolute;
+			top: 35px;
+			left: 50%;
+			margin-left: -3px;
+			/* 居中 */
+		}
+		
+		.button:hover .tip{
+			opacity:1;
+			-webkit-transform: translateY(0px);
+			-moz-transform: translateY(0px);
+			-ms-transform: translateY(0px);
+			-o-transform: translateY(0px);
+			transform: translateY(0px);
+		}
+	
+
+		.mes{
+			
+			width:100%;
+			background:#000;
+			margin:0 auto;
+			text-align:center;
+			padding:10px;
+			p{	
+				font-family:"微软雅黑";
+				padding:5px;
+				color:#fff;
+				a{
+					color:#b9b9b9;
+				}
+				span{
+					padding:0 10px;
+
+				}
+			}
+		}
+
+  /* 侧边栏 */
+
+  #sidebar{
+		position: fixed;/* 固定在左侧 */
+		min-height: 100%;
+		background: #000;
+		width: 50px;
+		height: 100%;
+		padding-top: 200px;
+		z-index: 1;
+		right: 0;
+		top:0;
+		border:1px solid #fff;
+	}
+	#sidebar .item {
+		background: #000;
+		color:#fff;
+		text-align: center;
+		font-size: 13px;
+		margin:20px auto;
+		font-family: "微软雅黑";
+		
+		z-index: 2;
+
+		-webkit-transform:scale(1);
+		-moz-transform:scale(1);
+		-ms-transform:scale(1);	
+		-o-transform:scale(1);
+		transform:scale(1);
+		-webkit-transition:all .5s;
+		-moz-transition:all .5s;
+		-ms-transition:all .5s;	
+		-o-transition:all .5s;
+		transition:all .5s;
+		
+
+	
+	}
+	#sidebar .item a{
+		color:#fff;
+	}
+	#sidebar .item:hover{
+		-webkit-transform:scale(1.4);
+		-moz-transform:scale(1.4);
+		-ms-transform:scale(1.4);	
+		-o-transform:scale(1.4);
+		transform:scale(1.4);
+		background:#fff;
+		color: #000;
+		.content{
+			opacity: 0.8;
+		}
+	}
+	#sidebar .item:hover a{
+		color: #000;
+		
+	} 
+	#closeBar{
+		position: fixed;
+		bottom: 30px;
+		width: 35px;
+	
+		cursor: pointer;
+		color:rgb(127,117,117);
+		right:0;
+		bottom: 0px;
+		z-index: 2;
+
+
+	}
+
+#sidebar .item .content{
+		width: 200px;
+		position: fixed;
+		right:40px; 
+		top: -1200%;
+		min-height: 5000%;
+		background: #000;
+		border: 1px solid black;
+		text-align: center;
+		/* display: none; */
+		z-index: 999;
+		
+		opacity: 0;
+		 color:#fff;
+		-webkit-transition: all .5s;
+		-moz-transition: all .5s;
+		-ms-transition: all .5s;
+		-o-transition: all .5s;
+		transition: all .5s;  
+
+	} /* display: none; */
+	/*  .text{
+		font-size: 16px;
+		color:red;
+		z-index: 100;
+		position: fixed;
+		
+		right: 600px;
+		top: 0px;
+		width: 100px;
+		opacity: 0;
+		-webkit-transition: all .8s;
+		-moz-transition: all .8s;
+		-ms-transition: all .8s;
+		-o-transition: all .8s;
+		transition: all .8s;
+		z-index: 100;  
+
+	}
+	.nav-content .glyphicon{
+		position: absolute;
+		top: 5px;
+		right: 5px;
+
+	} */ 
+/* 	#prof:hover #prof-content{
+ 		-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	-o-transform: translateX(0px);
+	transform: translateX(0px);
+	opacity: 1;
+} */
+	
+	.rotate{
+		-webkit-transform: rotate(135deg);
+		-moz-transform: rotate(135deg);
+		-ms-transform: rotate(135deg);
+		-o-transform: rotate(135deg);
+		transform: rotate(135deg); 
+	}
+	
+	
+	/* .opacity{
+		opacity: 1;
+	}
+	.scale{
+		-webkit-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		transform: scale(1.5); 
+	}
+
+ */
+}/* end min-width:767px */
+
+
+
+/* 导航栏响应式 */
+ @media screen and (max-width:768px){
+.navbar-default{
+	margin:0;
+}
+
+	.navbar-header{
+		background:$mediaSmall-navbar-header-background;
+		.navbar-collapse{
+			width: 100%;
+			border:none;
+		}
+		
+	}  
+
+.wrapper .top .navbar-default .navbar-header .checked a {
+    color:$mediaBig-a-hover-color;
+    background: $mediaBig-checked-a-background;
+  }
+	 .wrapper .top .navbar-default .navbar-header li a {
+	 	color: $mediaBig-checked-a-color;
+	 	&:hover{
+	 		color:$mediaBig-a-hover-color;
+	 	}
+
+
+	 }
+
+
+			.carousel{
+			position:relative;
+			top:0px;
+			width:100%;
+			margin:0 auto;
+			height:$mediaSmall-carousel-img-height;
+			overflow: hidden;
+			
+			}
+			.carousel .item{
+			width: 100%;
+			
+			
+			}
+			.carousel .item img{
+			width: 100%;
+			
+			}
+
+
+			.carousel-indicators li{
+			box-shadow:1px 1px 20px #000;
+			}
+			.carousel-caption{
+			position:absolute;
+			top: 10%;
+			left: 0%;
+			color: #fff;
+			text-shadow: 3px 3px 5px #000;
+			font-family:"Impact";
+			h3{
+			font-size: 40px;
+			}
+			}
+
+			.title{
+			
+			display: none;
+			}
+			
+			.fa-pagelines{
+			
+			position:relative;
+			font-size: 45px;
+			position:absolute;
+			top: 0;
+			
+			color:#2dcb70;
+			}
+
+		/* 内容区 */
+	.content{
+		width:80%;
+		margin:10px auto;
+		
+		font-family:"Tahoma","微软雅黑";
+		 .row{
+			.thumbnail{
+				cursor: pointer;
+				img{
+					width: 100%;
+					height: 60%;
+					overflow: hidden;
+					
+				}
+				.caption{
+					margin: 10px;
+					h3{
+						font-weight: 800;
+					}
+					.text{
+						padding: 10px 0;
+						line-height: 1.5;
+					}
+					.sub-left{
+							color:#838282;
+					}
+					.sub-right{
+						a{
+							display: inline-block;
+							color:#cacaca;
+							&:hover{
+								color: $mediaBig-a-hover-color;
+							}
+						}
+					}/* sub-right */
+				}/* caption */
+			}/* thumbnail */
+		}/* row */
+		
+		.btn{
+		padding: 10px 10%;
+	    color:#b16f6f;
+	    background: #f3d1d1;
+	    position: relative;
+	    top: 10px;
+	    left:-10%;
+	    margin:0 40%;
+	    &:hover{
+	    	color: #fff;
+	    	background:#fd9090;
+	  	}
+		}
+	}/* content */
+
+	/* 底部 */
+	.footer{
+
+		width:100%;
+		position: relative;
+	 	background:url(../img/black4.jpg) center center no-repeat; 
+		background-size:cover;
+		z-index:0;
+		padding-bottom:50px;
+		margin-top:50px;
+	}
+	.footer-mask{
+		width:100%;
+		background:rgba(0,0,0,0.6);
+		height:100%;
+		position:absolute;
+		top:0;
+		left:0;
+		z-index:1;
+	}
+
+	.box{
+			width: 100%;
+			height: 200px;
+			margin: 20px auto;
+			position: relative;
+			z-index:2;
+		}
+		.box .link{
+			width:25%;
+			/* height: 200px; */
+			float: left;
+			/* 或者inline-block */
+			margin:4%;
+			text-align:center
+		}
+		.box .link a{
+			display:inline-block;
+		}
+
+		.link .icon{
+			display: inline-block;
+			width:100%;
+			margin:35px auto;
+			top:10px;
+			left:0px;
+			z-index:3;
+
+			 /* 图标高度155*1.5倍 */ 
+			 -webkit-transition:0.2s ease-out;
+			  -moz-transition:0.2s ease-out;
+			   -o-transition:0.2s ease-out;
+			 transition:0.2s ease-out;
+			/*  IE9不支持transition 所以可以不写-ms- */
+		}
+		.link .icon .fa{
+			top:0;
+			left:0;
+			margin-left:0px;
+			margin-top:0px;
+			color:#fff;
+		}
+		.link .icon .fa-5x{
+			font-size:3em;
+		}
+		.link .icon:hover{
+		
+			-webkit-transform: scale(1.3);
+			/* 同时进行旋转和放大 如果写成-webkit-transform:; -webkit-transform:scale(1.3)则只会执行最后的scale*/
+			-moz-transform: scale(1.3);
+			-ms-transform: scale(1.3);
+			-o-transform: scale(1.3);
+			transform: scale(1.3);
+			opacity:0.8;
+				
+		}
+	/* 	.link-miss .icon{
+		background: url(../img/mission.png) no-repeat center center;
+	
+	}
+	.link-play .icon{
+		background: url(../img/play.png) no-repeat center center;
+	} */
+		/* .link-touch .icon{
+			background: url(../img/touch.png) no-repeat center center;
+		} */
+		.button{
+			display:block;
+			width: 100%;
+			height: 50px;
+			line-height: 50px;
+			text-decoration: none;
+			color: #2dcb70;
+			font-family:"Candara", "幼圆";
+			font-size:16px;
+			border: 2px solid rgba(255,255,255,0.6);
+			/* padding-left: 60px; */
+			text-align:center;
+			margin: 0 auto;
+		/* 最终的button实际宽度是180px 而不用加padding和border */
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+			-o-box-sizing: border-box;
+			box-sizing: border-box;
+		
+		 	/* background: url(../img/allow.png)
+		 			130px center no-repeat;  */
+			-webkit-transition: 0.4s ease ;
+			-moz-transition: 0.4s ease ;
+			-ms-transition: 0.4s ease ;
+			-o-transition: 0.4s ease ;
+			transition: 0.4s ease ;
+
+			position: relative;
+			/* 给下面的线定位 */
+
+		}
+		.button:hover{
+			border: 2px solid #fff;
+			background-position:
+			140px center;
+			color:#fff;
+		}
+		.button .line{
+			display: block;
+			position: absolute;
+			/* 线需要移动 所以要定位 */
+			background: none;
+			/* 初始状态是看不到线的 */
+			-webkit-transition: 0.4s ease ;
+			-moz-transition: 0.4s ease ;
+			-ms-transition: 0.4s ease ;
+			-o-transition: 0.4s ease ;
+			transition: 0.4s ease ;
+		}
+		.button:hover .line{
+			background: #fff;
+			/* 划过之后出现线条 */
+
+
+		}
+		.button .line-top{
+			height: 2px; /* 跟border一样高 */
+			width: 0; /* 由点变线 */
+			/* 初始状态 */
+			left: -110%;/* 距离比Button要宽 */
+			top: -2px;
+
+		}
+		.button:hover .line-top{
+			/* 最终状态 */
+			width: 100%;
+			left: -2px;/* 跟左边框对齐 */ 
+		}
+
+		.button .line-bottom{
+			height: 2px; /* 跟border一样高 */
+			width: 0; /* 由点变线 */
+			/* 初始状态 */
+			right: -110%;/* 距离比Button要宽 */
+			bottom: -2px;
+
+		}
+		.button:hover .line-bottom{
+			/* 最终状态 */
+			width: 100%;
+			right: -2px;/* 跟左边框对齐 */ 
+		}
+
+
+		.button .line-right{
+			width: 2px; /* 跟border一样高 */
+			height: 0; /* 由点变线 */
+			/* 初始状态 */
+			top: -110%;/* 距离比Button要宽 */
+			right: -2px;
+
+		}
+		.button:hover .line-right{
+			/* 最终状态 */
+			height: 100%;
+			top: -2px;/* 跟左边框对齐 */ 
+		}
+
+		.button .line-left{
+			width: 2px; /* 跟border一样高 */
+			height: 0; /* 由点变线 */
+			/* 初始状态 */
+			bottom: -110%;/* 距离比Button要宽 */
+			left: -2px;
+
+		}
+		.button:hover .line-left{
+			/* 最终状态 */
+			height: 100%;
+			bottom: -2px;/* 跟左边框对齐 */ 
+		}
+		.tip{
+			position: absolute;
+			padding: 0 10px;
+			height: 35px;
+			line-height: 35px;
+			background: #2dcb70;
+			color: #fff;
+			font-size: 15px;
+			margin: 0 auto;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			-ms-border-radius: 3px;
+			-o-border-radius: 3px;
+			border-radius: 3px;
+			-webkit-transform: translateY(20px);
+			-moz-transform: translateY(20px);
+			-ms-transform: translateY(20px);
+			-o-transform: translateY(20px);
+			transform: translateY(20px);
+			-webkit-transition:all .5s;
+			-moz-transition:all .5s;
+			-ms-transition:all .5s;
+			-o-transition:all .5s;
+			transition:all .5s;
+			top: -50px;
+			/* 初始状态的tip与box顶部的距离 */
+			opacity: 0;
+			z-index:4;
+			
+		}
+		 .weibo,.weixin{
+			left:13%;
+		}
+		 .qq{
+			left:7%;
+		}
+		
+
+		.tip em{
+			font-style: normal;
+
+		}
+		.tip span{
+			display: block;
+			width: 0;
+			height: 0;
+			overflow: hidden;
+			border: 7px solid transparent;
+			border-top-color:#2dcb70; 
+			position: absolute;
+			top: 35px;
+			left: 50%;
+			margin-left: -3px;
+			/* 居中 */
+		}
+
+		.button:hover .tip{
+			opacity:1;
+			-webkit-transform: translateY(0px);
+			-moz-transform: translateY(0px);
+			-ms-transform: translateY(0px);
+			-o-transform: translateY(0px);
+			transform: translateY(0px);
+		}
+
+		.mes{
+			
+			width:100%;
+			background:#000;
+			margin:0 auto;
+			text-align:center;
+			padding:10px;
+			p{	
+				font-family:"微软雅黑";
+				padding:5px;
+				color:#fff;
+				a{
+					color:#b9b9b9;
+				}
+				span{
+					padding:0 10px;
+
+				}
+			}
+		}
+
+
+}
+
+

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="view-port" content="width=device-width,inital-scale=1">
+  <!-- 显示窗口宽度是客户端的屏幕宽度，显示的文字和图形的初始比例是 1.0-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <!-- 告诉IE浏览器采用最新的渲染模式 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!--[if IE 7]>
+<link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
+<![endif]-->
+<link rel="stylesheet" href="css/ostrich-sans.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/myreset.css">
+  <link rel="stylesheet" href="css/text13.css">
+  <!-- 编辑 -->
+  <link rel="stylesheet" type="text/css" href="../joy/wangEditor/dist/css/wangEditor.min.css">
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-validation-1.14.0/lib/jquery.js"></script>
+  <script src="js/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+  <script src="js/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+<!--   <script type="text/javascript" src="js/text.js"></script> -->
+  <script type="text/javascript" src="js/test.js"></script>
+
+
+
+  <title>Joy乐享生活</title>
+ <style type="text/css">
+        body{
+          font-family: "微软雅黑";
+          background: #fff;
+        }
+        
+        .editor-box{
+          width: 1000px;
+          margin: 0px auto;
+          background: #fff;
+          padding: 20px 50px;
+        }
+        .editor-main{
+            width: 800px;
+            margin: 50px auto;
+            margin-top:10px;
+        }
+        #editor-trigger {
+            height: 400px;
+            /*max-height: 500px;*/
+        }
+        .editor-container {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+        .editor-title-box{
+          padding-top: 50px;
+        }
+        .editor-title{
+          width: 1000px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          font-size: 26px;
+          padding: 30px 0;
+          font-family:"Comic Sans MS", "Impact","微软雅黑";
+         
+
+        }
+        .editor-btn-box{
+          width: 1000px;
+          margin: 15px auto;
+        }
+        .editor-btn{
+          float: right;
+          padding-top: 10px;
+         padding-right: 10px;
+        }
+         .editor-btn a{
+          display: inline-block;
+        } 
+         .editor-write-btn:hover, .editor-back-btn:hover.editor-cancle-btn:hover,.editor-publish-btn:hover{
+            background: #e05b5b;
+            color: #fff;
+          }
+        .editor-cancle-btn,.editor-publish-btn,.editor-write-btn{
+          width: 100px;
+          background: #f19191;
+          color: #fff;
+          padding:10px 20px;
+        
+        }
+        .editor-write-btn{
+          float: right;
+          margin-right: 20px;
+          text-align: center;
+          padding: 5px 10px;
+        }
+
+         /* .editor-write-btn{
+         position: absolute;
+         top: 120px;
+         right: 200px;
+         
+                }  */
+        .editor-publish-btn{
+          margin-right: 30px;
+        }
+        .editor-back{
+          float: left;
+          padding-top: 10px;
+          padding-left: 10px;
+          text-align: center;
+
+        }
+        .editor-back-btn{
+          background: none;
+          border: 1px solid #f19191;
+          width: 100px;
+          padding:10px 20px;
+        }
+        .editor-back-btn:hover{
+          background: #e05b5b;
+            color: #fff;
+        }
+         .editor-back a{
+          display: block;
+          color: #f19191;
+         }
+          .ui-dialog{
+            background: #fff;
+            opacity: 1;
+        
+          }
+          .titBox{
+            color: #000;
+          }
+          .txt{
+            color: #000;
+          }
+          .ui-dialog-title{
+            height: 70px;
+            line-height: 70px;
+            border-bottom: 1px dotted #ddd;
+            font-size: 20px;
+            margin-top: 0px;
+
+          }
+          .contentBox{
+            padding-bottom: 10px;
+          }
+          .col{
+            width: 100%;
+          }
+          .form-control{
+            float: left;
+            width: 50%;
+          }
+          .editor-alert-box{
+            width: 50%;
+            margin: 0px auto;
+            margin-bottom: 20px;
+          }
+          .nav-tabs{
+            width: 900px;
+            margin: 0 auto;
+          }
+          .nav-tabs li a:hover,.nav-tabs li.active a:focus{
+            background:#f19191;
+            color: #fff;
+          }
+          .editor-user{
+            width: 1000px;
+            margin: 20px auto;
+
+          }
+          .nav-tabs a{
+            display: inline-block;
+          }
+          .editor-user-head{
+            width: 80px;
+            height: 80px;
+
+          }
+          .editor-user-head a{
+            display: inline-block;
+          }
+          .editor-user-head img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+          }
+          .editor-user-name{
+            margin-left: 30px;
+            font-size: 24px;
+            height: 80px;
+            line-height: 80px;
+          }
+          .deal-select{
+            width: 900px;
+            margin: 20px auto;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 20px;
+          }
+          .deal-select-name{
+        
+           margin-right: 10px;
+          }
+          .deal-selector{
+            width: 70px;
+            height: 22px;
+            line-height: 22px;
+            padding: 0px 1px;
+            margin-right: 20px;
+          }
+          .table{
+            width: 900px;
+            
+          }
+        
+
+            /* tr:nth-child(2n+1){
+             background:grey;
+                       }
+                       .table-hover{
+            background-color: pink;
+                       }  */
+          tr a{
+            display: inline-block;
+          }
+           tr:hover{
+            background: #ccc;
+           }
+           .deal-page{
+            width: 500px;
+            margin: 50px auto;
+            margin-bottom: 0px;
+           }
+          .pagination .active a,.pagination .active a:hover{
+            background: #f19191;
+            border: 1px solid #f19191;
+          }
+          .control{
+            position: relative;
+
+          }
+          .tab-space{
+            padding: 0 3px;
+          }
+          .alertsort{
+            width: 180px;
+            border: 1px solid #000;
+            background: #fff;
+            padding: 20px;
+            position: absolute;
+          display: none;  
+          }
+           .alertsort .close{
+            position: absolute;
+            top: 5px;
+            right: 10px;
+           }
+           .alertsort input{
+            margin:5px;
+           }
+           .sort-btn{
+           
+            width: 80px;
+            margin: 0 auto;
+             margin-top: 10px;
+           }
+           .btn-default{
+            width: 80px;
+            padding: 3px 24px;
+           }
+           .top_color{
+            color:#e77941;
+           }
+             .cancletop{
+            color: #e77941;
+          }
+
+
+     
+ </style>
+</head>
+<body>
+
+
+<!-- 内容区域 -->
+<div class="editor-box">
+  <div class="editor-user clear">
+    <div class="editor-user-head fl">
+      <a href="javascript:;"><img src="images/saw1.jpg" alt=""></a>
+    </div>
+    <div class="editor-user-name fl">Ellins</div>
+  </div>
+      
+      <!-- <div class="editor-btn">
+         <a href="editor.html">
+         <input type="button" value="写文章" class="editor-write-btn">
+         </a>
+       </div>  -->
+  <ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#">文章管理</a></li>
+   <!--  <li role="presentation"><a href="#">类别管理</a></li>
+   <li role="presentation"><a href="#">草稿箱</a></li>
+   <li role="presentation"><a href="#">回收站</a></li> -->
+    <a href="editor.html" class="editor-write-btn">
+         <input type="button" value="写文章" >
+         </a>
+  </ul>
+  <div class="deal-select clear">
+  <div class="deal-select-name fl">
+    类型
+  </div>
+    <select class="form-control deal-selector">
+    <option>原创</option>
+    <option>转载</option>
+  </select>
+   <div class="deal-select-name fl">
+    分类
+  </div>
+    <select class="form-control deal-selector">
+    <option>健身</option>
+    <option>时尚</option>
+    <option>美食</option>
+    <option>旅游</option>
+    <option>读书</option>
+  </select>
+  </div>
+
+  <table class="table table-striped">
+
+   <thead>
+     <td>标题</td>
+     <td>阅读</td>
+     <td>评论</td>
+     <td>操作</td>
+   </thead>
+   <tr class="tr">
+     <td class="first_td"><a href="#">今夏最潮流之条纹衬衫</a></td>
+     <td>562</td>
+     <td>59</td>
+     <td class="control" id="control">
+    
+     
+      <a href="passage.html">编辑</a><span class="tab-space top">|</span>
+     <a href="#" onclick="alertDelete()">删除</a><span class="tab-space">|</span>
+     <a href="#" class="sort" id="1">分类</a>
+      <div id="alertsort1" class="alertsort">
+        <button type="button" class="close" id="1" aria-label="Close" ><span aria-hidden="true">&times;</span></button>
+        <input type="checkbox" value="gym" id="gym"><label for="gym">健身</label>
+        <input type="checkbox" value="fashion" id="fashion"><label for="fashion">时尚</label>
+        <input type="checkbox" value="food" id="food"><label for="food">美食</label>
+        <input type="checkbox" value="trip" id="trip"><label for="trip">旅游</label>
+        <input type="checkbox" value="read" id="read"><label for="read">阅读</label>
+        <div class="sort-btn">
+          <button type="button" class="btn btn-default" id="1">确定</button>
+        </div>
+        
+      </div>
+     </td>
+   </tr>
+    <tr class="tr">
+     <td class="first_td"><a href="#" >今夏最潮流之仙女裙</a></td>
+     <td>562</td>
+     <td>59</td>
+     <td>
+     
+     
+     <a href="passage.html">编辑</a><span class="tab-space">|</span>
+     <a href="#"  onclick="alertDelete()">删除</a><span class="tab-space">|</span>
+    <a href="#" class="sort" id="2">分类</a>
+       <div id="alertsort2"  class="alertsort">
+        <button type="button" class="close" id="2" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <input type="checkbox" value="gym" id="gym"><label for="gym">健身</label>
+        <input type="checkbox" value="fashion" id="fashion"><label for="fashion">时尚</label>
+        <input type="checkbox" value="food" id="food"><label for="food">美食</label>
+        <input type="checkbox" value="trip" id="trip"><label for="trip">旅游</label>
+        <input type="checkbox" value="read" id="read"><label for="read">阅读</label>
+         <div class="sort-btn">
+          <button type="button" class="btn btn-default" id="2">确定</button>
+        </div>
+
+      </div> 
+     </td>
+   </tr>
+    <tr class="tr">
+     <td class="first_td"><a href="#">今夏最潮流之绑带鞋</a></td>
+     <td>562</td>
+     <td>59</td>
+     <td>
+     
+     
+     <a href="passage.html">编辑</a><span class="tab-space">|</span>
+     <a href="#"  onclick="alertDelete()">删除</a><span class="tab-space">|</span>
+     <a href="#" class="sort" id="3">分类</a>
+     <div id="alertsort3"  class="alertsort">
+      <button type="button" class="close" id="3" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <input type="checkbox" value="gym" id="gym"><label for="gym">健身</label>
+      <input type="checkbox" value="fashion" id="fashion"><label for="fashion">时尚</label>
+      <input type="checkbox" value="food" id="food"><label for="food">美食</label>
+      <input type="checkbox" value="trip" id="trip"><label for="trip">旅游</label>
+      <input type="checkbox" value="read" id="read"><label for="read">阅读</label>
+       <div class="sort-btn">
+          <button type="button" class="btn btn-default" id="3">确定</button>
+        </div>
+
+    </div> 
+     </td>
+   </tr>
+    <tr class="tr">
+     <td class="first_td"><a href="#">今夏最潮流之一字肩</a></td>
+     <td>562</td>
+     <td>59</td>
+     <td>
+    
+     
+      <a href="passage.html">编辑</a><span class="tab-space">|</span>
+     <a href="#"  onclick="alertDelete()">删除</a><span class="tab-space">|</span>
+    <a href="#" class="sort" id="4">分类</a>
+     <div id="alertsort4"  class="alertsort">
+      <button type="button" class="close" id="4" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <input type="checkbox" value="gym" id="gym"><label for="gym">健身</label>
+      <input type="checkbox" value="fashion" id="fashion"><label for="fashion">时尚</label>
+      <input type="checkbox" value="food" id="food"><label for="food">美食</label>
+      <input type="checkbox" value="trip" id="trip"><label for="trip">旅游</label>
+      <input type="checkbox" value="read" id="read"><label for="read">阅读</label>
+       <div class="sort-btn">
+          <button type="button" class="btn btn-default" id="4">确定</button>
+        </div>
+
+    </div> 
+     </td>
+   </tr>
+    <tr class="tr">
+     <td class="first_td"><a href="#">复古潮流——玛格丽特、珍妮、奶奶鞋</a></td>
+     <td>562</td>
+     <td>59</td>
+     <td>
+    
+     
+      <a href="passage.html">编辑</a><span class="tab-space">|</span>
+     <a href="#"  onclick="alertDelete()">删除</a><span class="tab-space">|</span>
+     <a href="#" class="sort" id="5">分类</a>
+     <div id="alertsort5"  class="alertsort">
+      <button type="button" class="close" id="5" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <input type="checkbox" value="gym" id="gym"><label for="gym">健身</label>
+      <input type="checkbox" value="fashion" id="fashion"><label for="fashion">时尚</label>
+      <input type="checkbox" value="food" id="food"><label for="food">美食</label>
+      <input type="checkbox" value="trip" id="trip"><label for="trip">旅游</label>
+      <input type="checkbox" value="read" id="read"><label for="read">阅读</label>
+       <div class="sort-btn">
+          <button type="button" class="btn btn-default" id="5">确定</button>
+        </div>
+
+    </div> 
+     </td>
+   </tr>
+  </table>
+  <div class="deal-page">
+    <nav aria-label="Page navigation">
+      <ul class="pagination">
+        <li class="disabled">
+          <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">9</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<!--  <script type="text/javascript" src="拖动test.js"></script> -->
+   <script type="text/javascript" src="data.js"></script>
+
+
+   <script type="text/javascript" src="fx.js"></script> 
+    <script type="text/javascript" src="../joy/wangEditor/dist/js/wangEditor.js"></script>
+    <!--<script type="text/javascript" src="../dist/js/wangEditor.min.js"></script>-->
+ 
+    <script type="text/javascript" src="拖动test.js"></script>
+    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+          
+      /*  $(document).ready(function(){
+           console.log("eee");
+        
+         
+          $('#sort').click(function(){
+            console.log("aaa");
+            var element = this;
+            $(element).style
+            var alertsort=$(".alertsort");
+           alertsort.style.display="block";
+          })
+        })
+        */
+       /* var hide=function(){
+          var close= getElementsByClassName("close");
+          for(var i=0;i<close.length;i++){
+              close[i].onclick=function(oEvent){
+               oEvent=oEvent||event;
+                document.getElementById("alertsort"+this.id).style.display='none';
+              }
+          
+          }
+        }*/
+        $(".table").on('click','a',function(event){
+        event.preventDefault;
+        var td=$(this).parent();
+
+        /*var first_td=td.children("a .first_td");*/
+        //console.log(first_tr);
+        var tr=$(this).parents(".tr");
+       var first_td=$(this).parents(".tr").children(".first_td");
+     var first_top=$(this).parent().children(".top");
+      //console.log(first_tr);
+        var table=$(this).parents(".table");
+        if ($(this).is('.top')&&tr.index()==0){
+          alert("已经是顶部了！");
+          return false;
+        }
+        switch(true){
+          case $(this).is('.top'):
+          table.prepend(tr);
+         first_td.prepend("<span class='top_color'>[置顶]</span>");
+         first_top.remove();
+         td.prepend("<a href='#'  class='cancletop'>取消置顶</a><span class='tab-space top'>|</span>");
+
+          break;
+         
+        }
+
+      })
+     window.onload=function(){
+      
+
+     var close=document.getElementsByClassName("close");
+          for(var i=0;i<close.length;i++){
+              close[i].onclick=function(oEvent){
+               oEvent=oEvent||event;
+                document.getElementById("alertsort"+this.id).style.display='none';
+              }
+            }
+
+      var closeBtn=document.getElementsByClassName("btn");
+          for(var i=0;i<closeBtn.length;i++){
+              closeBtn[i].onclick=function(oEvent){
+               oEvent=oEvent||event;
+                document.getElementById("alertsort"+this.id).style.display='none';
+              }
+            }
+         var a=document.getElementsByClassName("sort");
+         for(var i=0;i<a.length;i++){
+          a[i].onclick=function(oEvent){
+              oEvent=oEvent||event;
+            
+              document.getElementById("alertsort"+this.id).style.display='block';
+          }
+         }
+       }
+ 
+        /*   $(".sort").click(function(){
+            var alertsort= $(".sort").siblings(".alertsort");
+           alertsort.show();
+          });
+          $(".close").click(function(){
+              console.log("aa");
+             var alertsort= $(".sort").siblings(".alertsort");
+            alertsort.hide();
+          })
+        })*/
+
+          function alertDelete(){
+            confirm("删除文章将不可恢复，是否继续");
+           }
+          /* var i;
+          
+           function alertSort(){
+             var  alertsort=document.getElementsByClassName("alertsort");
+             console.log(alertsort);
+             for(var i=0;i<alertsort.length;i++){
+              alertsort[i].style.display="block";
+             }
+            
+           }*/
+
+      
+    </script>
+</body>
+</html>

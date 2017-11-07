@@ -1,0 +1,88 @@
+@charset "UTF-8";
+.content_item {
+  /* width: 370px;*/
+  /*  min-height: 300px; */
+  background: #fff;
+  border-radius: 4px;
+  /* margin: 40px -40px  0 0; */
+  position: relative;
+  color: #888;
+  float: left;
+  margin: 10px; }
+
+.content_item:hover {
+  box-shadow: 0 0 10px 5px #fff; }
+
+/* 文字部分 */
+.content_item_head_intro {
+  font-size: 14px;
+  line-height: 22px;
+  padding: 10px;
+  text-align: center; }
+
+.content_item_media {
+  /* height: 277px;*/
+  overflow: hidden;
+  padding-bottom: 10px; }
+
+.content_item_footer {
+  padding: 10px 15px;
+  margin: 0 15px;
+  /* border-top: 1px solid #d6d6d6; */
+  font-size: 12px;
+  color: #b2b2b2;
+  line-height: 20px; }
+
+.content_item_footer_like {
+  padding-top: 5px; }
+
+.content_item_footer_info a {
+  color: #b2b2b2;
+  text-decoration: none;
+  padding-right: 10px;
+  display: inline-block;
+  height: 20px;
+  float: right; }
+
+.content_item_footer_info a:hover {
+  color: pink; }
+
+.glyphicon glyphicon-heart-empty, .glyphicon glyphicon-comment {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  font-size: 0px;
+  overflow: hidden;
+  background-image: url(images/timeline.png);
+  text-align: bottom; }
+
+.glyphicon glyphicon-heart-empty {
+  background-position: -883px -21px; }
+
+.glyphicon glyphicon-comment {
+  background-position: -897px -42px; }
+
+/* 引号的图片 */
+.ul_icon {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  font-size: 0px;
+  overflow: hidden;
+  background-image: url(images/timeline.png);
+  margin-right: 5px;
+  vertical-align: bottom; }
+
+.quote_before {
+  background-position: -986px -82px; }
+
+.quote_after {
+  background-position: -986px -102px; }
+
+.date {
+  float: left;
+  color: #b2b2b2; }
+
+/*# sourceMappingURL=index_waterfall.css.map */
